@@ -1,17 +1,17 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <HelloWorld msg="work"></HelloWorld>
+    <AllBrews msg="work"></AllBrews>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import AllBrews from '@/components/AllBrews.vue'; // @ is an alias to /src
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    AllBrews,
   }
   // data () {
   //   return {

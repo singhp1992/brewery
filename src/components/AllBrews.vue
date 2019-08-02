@@ -5,8 +5,9 @@
 </template>
 
 <script>
+
 export default {
-  name: 'HelloWorld',
+  name: 'AllBrews',
   props: {
     msg: String
   }
@@ -14,7 +15,7 @@ export default {
 
 </script>
 
-<style scoped lang="less">
+<style>
 h3 {
   margin: 40px 0 0;
 }
