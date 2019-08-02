@@ -1,19 +1,19 @@
 <template>
-  <div class="home">
-    <h1> All Breweries </h1>
+  <div class="categories">
+    <h1>Categories</h1>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Home' 
+  name: 'Categories' 
 }
 </script>
 
 <style>
 
-.home {
+.categories {
   margin-top: 100px;
 }
 
