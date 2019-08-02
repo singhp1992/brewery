@@ -9,10 +9,14 @@
 </template>
 
 <script> 
+
 export default {
     name: "Brewerys",
-    props: ["brewerys"]
+    props: [
+    "brewerys",
+    ]
 }
+
 </script>
 
 <style scoped>
