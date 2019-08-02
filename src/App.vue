@@ -20,13 +20,11 @@ import Nav from './views/Nav.vue';
 // }
 
 export default {
-  	
-    components: {
-      name: 'App',
-      header: 'Nav'
-    }
-    
- }  
+  name: 'App',
+  components: {
+    Nav
+  }
+}
 </script>
 
 <style>
