@@ -1,37 +1,24 @@
 <template>
   <div id="app">
-    <Todos v-bind:todos="todos" />
+    <Nav />
+    <router-view/>
+    <div id="footer">
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/categories">Categories</router-link> | 
+      <router-link to="/random">Random</router-link> |
+      <router-link to="/github" target="_blank">Preeti Singh</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-// import Nav from './views/Nav.vue';
-import Todos from './components/Todos'; 
+import Nav from './views/Nav.vue';
 
 
 export default {
   name: 'app',
   components: {
-    // Nav,
-    Todos
-  },
-  data() {
-    return {
-      todos: [
-        { 
-          id: 1, 
-          title: 'Free State Brewery',
-        },
-        { 
-          id: 2, 
-          title: 'Avondale Brewing Co',
-        },
-        { 
-          id: 3, 
-          title: 'DogFish',
-        }
-      ]
-    }
+    Nav,
   }
 }
 </script>
@@ -66,12 +53,3 @@ export default {
 }
 
 </style>
-
-    <Nav />
-    <router-view/>
-    <div id="footer">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/categories">Categories</router-link> | 
-      <router-link to="/random">Random</router-link> |
-      <router-link to="/github" target="_blank">Preeti Singh</router-link>
-    </div>
