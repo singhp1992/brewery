@@ -1,8 +1,8 @@
 <template>
     <div>
         <ul>
-            <li v-bind:key="todo.id" v-for="todo in todos">
-                <p>{{ todo.title }}</p>
+            <li v-bind:key="place.id" v-for="place in places">
+                <p>{{ place.title }}</p>
             </li>
         </ul>
     </div>
@@ -10,8 +10,8 @@
 
 <script> 
 export default {
-    name: "Todos",
-    props: ["todos"]
+    name: "Places",
+    props: ["places"]
 }
 </script>
 

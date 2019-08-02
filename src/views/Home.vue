@@ -1,21 +1,21 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <Todos v-bind:todos="todos" />
+    <Places v-bind:places="places" />
   </div>
 </template>
 
 <script>
-import Todos from '../components/Todos'; 
+import Places from '../components/Places'; 
 
 export default {
   name: 'Home',
   components: {
-    Todos
+    Places
   },
   data() {
     return {
-      todos: [
+      places: [
         { 
           id: 1, 
           title: 'Free State Brewery',
