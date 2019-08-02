@@ -1,33 +1,36 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <AllBrews msg="work"></AllBrews>
+    <Todos> </Todos>
   </div>
 </template>
 
 <script>
-import AllBrews from '@/components/AllBrews.vue'; // @ is an alias to /src
+import Todos from '@/components/Todos'; 
 
 export default {
   name: 'home',
   components: {
-    AllBrews,
+    Todos,
+  },
+  data () {
+    return {
+      todos: [
+        { 
+          id: 1, 
+          title: 'Free State Brewery'
+        },
+        { 
+          id: 2, 
+          title: 'Avondale Brewing Co' 
+        },
+        { 
+          id: 3, 
+          title: 'DogFish'
+        }
+      ]
+    }
   }
-  // data () {
-  //   return {
-  //     li: [
-  //     { id: 1, 
-  //       title: 'Free State Brewery'
-  //     },
-  //     { id: 2, 
-  //       title: 'Avondale Brewing Co' 
-  //     },
-  //     { id: 3, 
-  //       title: 'DogFish'
-  //     }
-  //   ]
-  //   }
-  // }
 }
 
 

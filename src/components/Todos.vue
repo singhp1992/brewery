@@ -1,21 +1,18 @@
 <template>
   <div>
-   <ul> 
-     <li
-      ></li>
-   </ul>
+      <h1>Todos</h1>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'AllBrews',
-  
+  name: "Todos",
 }
 
 </script>
 
-<style>
+
+<style scoped>
 
 </style>
