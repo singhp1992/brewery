@@ -9,8 +9,9 @@
 
 <script>
 
-export default class Landing extends Vue {}
-
+export default {
+  name: 'Landing' 
+}
 </script>
 
 <style lang="css">

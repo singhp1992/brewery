@@ -9,7 +9,9 @@
 
 <script>
 
-export default class Nav extends Vue {}
+export default {
+  name: 'Nav' 
+}
 
 </script>
 

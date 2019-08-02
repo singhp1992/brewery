@@ -13,32 +13,11 @@
 
 <script>
 
-// import VueRouter, { RouteConfig } from 'vue-router';
-// import { Component, Vue } from 'vue-property-decorator';
-// import Landing from './views/Landing.vue';
-// import Nav from './views/Nav.vue';
 
+export default {
+  name: 'App' 
+}
 
-// @Component({
-//   components: {
-//     Landing,
-//     Nav,
-//   },
-// })
-
-// import Nav from './components/Nav.vue'
-// export default {
-//   name: 'app',
-//   components: {
-//     Nav
-//   }
-// }
-
-export default class App extends Vue {}
-
-// export default {
-//   name: 'App' 
-// }
 </script>
 
 <style>

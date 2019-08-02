@@ -6,8 +6,9 @@
 
 <script>
 
-export default class Categories extends Vue {}
-
+export default {
+  name: 'Categories' 
+}
 </script>
 
 <style>
