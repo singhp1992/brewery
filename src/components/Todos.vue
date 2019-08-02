@@ -1,8 +1,10 @@
 <template>
     <div>
-        <div v-bind:key="todo.id" v-for="todo in todos">
-            <h3>{{ todo.title }}</h3>
-        </div>
+        <ul>
+            <li v-bind:key="todo.id" v-for="todo in todos">
+                <p>{{ todo.title }}</p>
+            </li>
+        </ul>
     </div>
 </template>
 
