@@ -14,10 +14,11 @@
 <script>
 import Nav from './views/Nav.vue';
 
+
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    Nav
+    Nav,
   }
 }
 </script>
