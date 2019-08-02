@@ -15,7 +15,7 @@ export default {
     props: [
     "uniqueItemsList",
     "filterList"
-    ]
+    ],
 }
 
 </script>

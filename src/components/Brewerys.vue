@@ -13,7 +13,7 @@
 export default {
     name: "Brewerys",
     props: [
-    "brewerys",
+        "brewerys",
     ]
 }
 
