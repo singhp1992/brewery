@@ -1,38 +1,14 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <Todos> </Todos>
   </div>
 </template>
 
 <script>
-import Todos from '@/components/Todos'; 
 
 export default {
   name: 'home',
-  components: {
-    Todos,
-  },
-  data () {
-    return {
-      todos: [
-        { 
-          id: 1, 
-          title: 'Free State Brewery'
-        },
-        { 
-          id: 2, 
-          title: 'Avondale Brewing Co' 
-        },
-        { 
-          id: 3, 
-          title: 'DogFish'
-        }
-      ]
-    }
-  }
 }
-
 
 </script>
 
