@@ -1,7 +1,11 @@
 <template>
     <div class="brewerys">
         <ul>
-            <li v-bind:key="brewery.id" v-for="brewery in brewerys">
+            <li :key="brewery.id" 
+            v-for="brewery in brewerys"
+            v-show="state === '' || state === brewery.state" 
+            v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]"
+            >
                 <p>{{ brewery.title }}</p>
             </li>
         </ul>
@@ -14,6 +18,7 @@ export default {
     name: "Brewerys",
     props: [
         "brewerys",
+        "state"
     ]
 }
 

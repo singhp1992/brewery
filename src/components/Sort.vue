@@ -13,8 +13,10 @@
 export default {
     name: "Sort",
     props: [
+        
     "uniqueItemsList",
     "filterList"
+
     ],
 }
 
