@@ -1,8 +1,12 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <Sort :filterList="filterList" :uniqueItemsList="uniqueItemsList"/>
-    <Brewerys :brewerys="brewerys" />
+    <Sort :filterList="filterList" 
+    :uniqueItemsList="uniqueItemsList"
+    />
+    <Brewerys :brewerys="brewerys"
+    :state="state"
+     />
   </div>
 </template>
 
@@ -15,11 +19,6 @@ export default {
   components: {
     Brewerys,
     Sort
-  },
-  methods: {
-    filterList: function () {
-      this.state = event.target.value;
-    }
   },
   data() {
     return {
@@ -77,6 +76,13 @@ export default {
           }
       ]
     }
+  },
+  methods: {
+
+    filterList: function () {
+      this.state = event.target.value;
+    }
+
   },
   computed: {
     uniqueItemsList: function () {
