@@ -26,6 +26,7 @@ export default {
 
 ul {
   list-style-type: none;
+  width: 45%;
 }
 
 </style>
