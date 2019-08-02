@@ -1,33 +1,71 @@
 <template>
   <div id="home">
     <h1> All Breweries </h1>
-    <Places v-bind:places="places" />
+    <Brewerys v-bind:brewerys="brewerys" />
   </div>
 </template>
 
 <script>
-import Places from '../components/Places'; 
+import Brewerys from '../components/Brewerys'; 
 
 export default {
   name: 'Home',
   components: {
-    Places
+    Brewerys
   },
   data() {
     return {
-      places: [
-        { 
-          id: 1, 
-          title: 'Free State Brewery',
-        },
-        { 
-          id: 2, 
-          title: 'Avondale Brewing Co',
-        },
-        { 
-          id: 3, 
-          title: 'DogFish',
-        }
+      brewerys: [
+       {
+        title: 'Free State Brewery',
+        type: 'Micro',
+        address: '1234 Happy Street',
+        city: 'Springfield',
+        state: 'Kansas',
+        phone: '01234567',
+        website_url: 'http://www.beer.com',
+        showDetail: false,
+    },
+    {
+        title: 'Avondale Brewing Co',
+        type: 'Planning',
+        address: '1234 Happy Street',
+        city: 'Springfield',
+        state: 'Missouri',
+        phone: '01234567',
+        website_url: 'http://www.beer.com',
+        showDetail: false,
+    },
+    {
+        title: 'DogFish',
+        type: 'Regional',
+        address: '1234 Happy Street',
+        city: 'Springfield',
+        state: 'Oklahoma',
+        phone: '01234567',
+        website_url: 'http://www.beer.com',
+        showDetail: false
+    },
+    {
+        title: 'Coors',
+        type: 'Micro',
+        address: '1234 Happy Street',
+        city: 'Springfield',
+        state: 'Texas',
+        phone: '01234567',
+        website_url: 'http://www.beer.com',
+        showDetail: false,
+    },
+    {
+        title: 'Heineken',
+        type: 'Planning',
+        address: '1234 Happy Street',
+        city: 'Springfield',
+        state: 'California',
+        phone: '01234567',
+        website_url: 'http://www.beer.com',
+        showDetail: false,
+    }
       ]
     }
   }
