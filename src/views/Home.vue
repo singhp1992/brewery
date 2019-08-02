@@ -9,7 +9,7 @@
 import Todos from '../components/Todos'; 
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     Todos
   },
