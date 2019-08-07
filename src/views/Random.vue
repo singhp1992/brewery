@@ -6,7 +6,7 @@
         <p class="transform">Type: {{ info.brewery_type }}</p>
         <p class="transform">Location: {{ info.street }},  {{ info.state }} </p>
         <p>Contact: +1 {{ info.phone }}</p>
-        <p>Website: <a v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
+        <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
     </div>
     <div class="random-button">
         <button>Another One!</button>
@@ -52,8 +52,12 @@ export default {
   text-transform: capitalize;
 }
 
-a {
+.random-url {
   color: blue;
+}
+
+.random-url:visited {
+  color: black;
 }
 
 .random-button {
