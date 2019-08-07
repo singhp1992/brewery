@@ -9,7 +9,7 @@
         <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
     </div>
     <div class="random-button">
-        <button>Another One!</button>
+        <button v-on:click="fetchAnother()">Another One!</button>
     </div>
   </div>
 </template>
@@ -23,6 +23,15 @@ export default {
   data() {
     return {
       info: null,
+    }
+  },
+  methods: {
+    fetchAnother(){
+      axios
+      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
+      .then(response => {
+            this.info = response.data
+        })
     }
   },
   mounted() {
