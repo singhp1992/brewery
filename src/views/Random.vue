@@ -9,13 +9,6 @@
 
 import axios from 'axios'
 
-function myFunction() {
-  var base = "https://api.openbrewerydb.org/breweries/";
-  var randomId = Math.floor(Math.random() * 10).toString();;
-  var res = base.concat(randomId);
-  console.log(res)
-}
-
 export default {
   name: 'Random',
   data() {
@@ -27,15 +20,19 @@ export default {
   },
   mounted() {
     axios
-        .get('https://api.openbrewerydb.org/breweries/')
+        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 10).toString()))
         .then(response => {
             this.info = response.data
+            console.log(this.info)
         })
   },
   computed: {
-    randomIds: function () {
-      return Math.floor(Math.random() * 10).toString()
-    },    
+    newUrl: function (res) {
+      var base = "https://api.openbrewerydb.org/breweries/";
+      var randomId = Math.floor(Math.random() * 10).toString();;
+      var res = base.concat(randomId);
+       console.log(res)
+    },  
   },
 }
 
