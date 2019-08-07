@@ -13,6 +13,7 @@
 <script>
 import Brewerys from '../components/Brewerys'; 
 import Sort from '../components/Sort'
+import axios from 'axios'
 
 export default {
   name: 'Home',
@@ -23,58 +24,58 @@ export default {
   data() {
     return {
       state: '',
-      brewerys: [
-            {
-              title: 'Free State Brewery',
-              type: 'Micro',
-              address: '1234 Happy Street',
-              city: 'Springfield',
-              state: 'Kansas',
-              phone: '01234567',
-              website_url: 'http://www.beer.com',
-              showDetail: false,
-          },
-          {
-              title: 'Avondale Brewing Co',
-              type: 'Planning',
-              address: '1234 Happy Street',
-              city: 'Springfield',
-              state: 'Missouri',
-              phone: '01234567',
-              website_url: 'http://www.beer.com',
-              showDetail: false,
-          },
-          {
-              title: 'DogFish',
-              type: 'Regional',
-              address: '1234 Happy Street',
-              city: 'Springfield',
-              state: 'Oklahoma',
-              phone: '01234567',
-              website_url: 'http://www.beer.com',
-              showDetail: false
-          },
-          {
-              title: 'Coors',
-              type: 'Micro',
-              address: '1234 Happy Street',
-              city: 'Springfield',
-              state: 'Texas',
-              phone: '01234567',
-              website_url: 'http://www.beer.com',
-              showDetail: false,
-          },
-          {
-              title: 'Heineken',
-              type: 'Planning',
-              address: '1234 Happy Street',
-              city: 'Springfield',
-              state: 'California',
-              phone: '01234567',
-              website_url: 'http://www.beer.com',
-              showDetail: false,
-          }
-      ]
+      // brewerys: [
+      //       {
+      //         title: 'Free State Brewery',
+      //         type: 'Micro',
+      //         address: '1234 Happy Street',
+      //         city: 'Springfield',
+      //         state: 'Kansas',
+      //         phone: '01234567',
+      //         website_url: 'http://www.beer.com',
+      //         showDetail: false,
+      //     },
+      //     {
+      //         title: 'Avondale Brewing Co',
+      //         type: 'Planning',
+      //         address: '1234 Happy Street',
+      //         city: 'Springfield',
+      //         state: 'Missouri',
+      //         phone: '01234567',
+      //         website_url: 'http://www.beer.com',
+      //         showDetail: false,
+      //     },
+      //     {
+      //         title: 'DogFish',
+      //         type: 'Regional',
+      //         address: '1234 Happy Street',
+      //         city: 'Springfield',
+      //         state: 'Oklahoma',
+      //         phone: '01234567',
+      //         website_url: 'http://www.beer.com',
+      //         showDetail: false
+      //     },
+      //     {
+      //         title: 'Coors',
+      //         type: 'Micro',
+      //         address: '1234 Happy Street',
+      //         city: 'Springfield',
+      //         state: 'Texas',
+      //         phone: '01234567',
+      //         website_url: 'http://www.beer.com',
+      //         showDetail: false,
+      //     },
+      //     {
+      //         title: 'Heineken',
+      //         type: 'Planning',
+      //         address: '1234 Happy Street',
+      //         city: 'Springfield',
+      //         state: 'California',
+      //         phone: '01234567',
+      //         website_url: 'http://www.beer.com',
+      //         showDetail: false,
+      //     }
+      //]
     }
   },
   methods: {
@@ -83,6 +84,14 @@ export default {
       this.state = event.target.value;
     }
 
+  },
+  mounted() {
+    axios
+        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
+        .then(response => {
+            this.info = response.data
+            console.log(this.info)
+        })
   },
   computed: {
     uniqueItemsList: function () {
