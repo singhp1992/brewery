@@ -6,7 +6,7 @@
             v-show="state === '' || state === brewery.state" 
             v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]"
             >
-                <p>{{ brewery }}</p>
+                <p>{{ brewery.name }}</p>
             </li>
         </ul>
     </div>
