@@ -2,9 +2,9 @@
   <div class="random">
     <h1>Random</h1>
     <div class="random-info">
-        <p>Title: {{ info.name }}</p>
-        <p>Type: {{ info.brewery_type }}</p>
-        <p>Location: {{ info.street }},  {{ info.state }} </p>
+        <p class="transform">Title: {{ info.name }}</p>
+        <p class="transform">Type: {{ info.brewery_type }}</p>
+        <p class="transform">Location: {{ info.street }},  {{ info.state }} </p>
         <p>Contact: +1 {{ info.phone }}</p>
         <p>Website: {{ info.website_url }}</p>
     </div>
@@ -46,6 +46,10 @@ export default {
 
 .random-info {
   margin-top: 50px;
+}
+
+.transform {
+  text-transform: capitalize;
 }
 
 .random-button {
