@@ -16,23 +16,13 @@ export default {
       info: null,
     }
   },
-  methods: {
-  },
   mounted() {
     axios
-        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 10).toString()))
+        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
         .then(response => {
             this.info = response.data
             console.log(this.info)
         })
-  },
-  computed: {
-    newUrl: function (res) {
-      var base = "https://api.openbrewerydb.org/breweries/";
-      var randomId = Math.floor(Math.random() * 10).toString();;
-      var res = base.concat(randomId);
-       console.log(res)
-    },  
   },
 }
 
