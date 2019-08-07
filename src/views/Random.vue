@@ -8,19 +8,19 @@
 <script>
 
 import axios from 'axios'
-const baseURL = "https://api.openbrewerydb.org/breweries/"
 
-function randomRandy() {
-  return Math.floor(Math.random() * 10).toString();
+function myFunction() {
+  var base = "https://api.openbrewerydb.org/breweries/";
+  var randomId = Math.floor(Math.random() * 10).toString();;
+  var res = base.concat(randomId);
+  console.log(res)
 }
-console.log(randomRandy("y"))
 
 export default {
   name: 'Random',
   data() {
     return {
       info: null,
-      baseURL: "https://api.openbrewerydb.org/breweries/",
     }
   },
   methods: {
