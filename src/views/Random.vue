@@ -39,7 +39,6 @@ export default {
         .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
         .then(response => {
             this.info = response.data
-            console.log(this.info)
         })
   },
 }
