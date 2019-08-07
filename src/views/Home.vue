@@ -35,7 +35,6 @@ export default {
         .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
         .then(response => {
             this.brewerys = response.data
-            console.log(this.brewerys)
         })
   },
   computed: {
