@@ -3,9 +3,13 @@
         <ul>
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
-            v-show="state === '' || state === brewery.state" 
-            v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]" >
-                <p>{{ brewery.name }}</p>
+            v-show="state === '' || state === brewery.state" >
+                <h4 v-on:click="moreInfo()">{{ brewery.name }}</h4>
+                <div id="toggle">
+                    <p>Type: {{ brewery.brewery_type }}</p>
+                    <p class="transform">Location: {{ brewery.street }},  {{ brewery.state }} </p>
+                    <p>Contact: +1 {{ brewery.phone }}</p>
+                </div>
             </li>
         </ul>
     </div>
@@ -17,7 +21,8 @@ export default {
     name: "Brewerys",
     props: [
         "brewerys",
-        "state"
+        "state",
+        "moreInfo"
     ]
 }
 
@@ -32,9 +37,18 @@ export default {
     margin-left: 50px;
 }
 
+#toggle {
+    display: none;
+    text-transform: capitalize;
+}
+
 ul {
   list-style-type: none;
   width: 45%;
+}
+
+h4 {
+    cursor: pointer;
 }
 
 </style>

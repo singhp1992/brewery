@@ -4,7 +4,8 @@
     <Sort :filterList="filterList" 
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
-    :state="state" />
+    :state="state"
+    :moreInfo="moreInfo" />
   </div>
 </template>
 
@@ -27,6 +28,9 @@ export default {
     }
   },
   methods: {
+    moreInfo: function () {
+      document.getElementById("toggle").style.display="inline"
+    },
     filterList: function () {
       this.state = event.target.value;
     }

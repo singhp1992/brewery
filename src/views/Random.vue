@@ -2,7 +2,7 @@
   <div class="random">
     <h1>Random</h1>
     <div class="random-info">
-        <p class="transform">Title: {{ info.name }}</p>
+        <p class="transform">Name: {{ info.name }}</p>
         <p class="transform">Type: {{ info.brewery_type }}</p>
         <p class="transform">Location: {{ info.street }},  {{ info.state }} </p>
         <p>Contact: +1 {{ info.phone }}</p>
@@ -22,13 +22,13 @@ export default {
   name: 'Random',
   data() {
     return {
-      info: null,
+      info: []
     }
   },
   methods: {
     fetchAnother(){
       axios
-      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
+      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 6000).toString()))
       .then(response => {
             this.info = response.data
         })
@@ -39,7 +39,6 @@ export default {
         .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
         .then(response => {
             this.info = response.data
-            console.log(this.info)
         })
   },
 }
