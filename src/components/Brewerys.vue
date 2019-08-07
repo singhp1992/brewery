@@ -4,8 +4,7 @@
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state" 
-            v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]"
-            >
+            v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]" >
                 <p>{{ brewery.name }}</p>
             </li>
         </ul>
