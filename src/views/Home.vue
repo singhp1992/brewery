@@ -2,11 +2,9 @@
   <div id="home">
     <h1> All Breweries </h1>
     <Sort :filterList="filterList" 
-    :uniqueItemsList="uniqueItemsList"
-    />
+    :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
-    :state="state"
-     />
+    :state="state" />
   </div>
 </template>
 
@@ -24,6 +22,45 @@ export default {
   data() {
     return {
       state: '',
+      info: null
+    }
+  },
+  methods: {
+    filterList: function () {
+      this.state = event.target.value;
+    }
+  },
+  mounted() {
+    axios
+        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
+        .then(response => {
+            this.info = response.data
+            console.log(this.info)
+        })
+  },
+  computed: {
+    uniqueItemsList: function () {
+        const states = [];
+        this.brewerys.forEach((item) => {
+            if (!states.includes(item.state)) {
+                states.push(item.state);
+            }
+        });
+        return states;
+    }
+  },
+}
+
+</script>
+
+<style>
+
+#home {
+  margin-top: 100px;
+}
+
+</style>
+
       // brewerys: [
       //       {
       //         title: 'Free State Brewery',
@@ -76,42 +113,3 @@ export default {
       //         showDetail: false,
       //     }
       //]
-    }
-  },
-  methods: {
-
-    filterList: function () {
-      this.state = event.target.value;
-    }
-
-  },
-  mounted() {
-    axios
-        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
-        .then(response => {
-            this.info = response.data
-            console.log(this.info)
-        })
-  },
-  computed: {
-    uniqueItemsList: function () {
-        const states = [];
-        this.brewerys.forEach((item) => {
-            if (!states.includes(item.state)) {
-                states.push(item.state);
-            }
-        });
-        return states;
-    }
-  },
-}
-
-</script>
-
-<style>
-
-#home {
-  margin-top: 100px;
-}
-
-</style>
