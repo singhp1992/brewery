@@ -27,6 +27,9 @@ export default {
     }
   },
   methods: {
+    toggleDetails: function (brewery) {
+      brewery.showDetail = !brewery.showDetail       
+    },
     filterList: function () {
       this.state = event.target.value;
     }

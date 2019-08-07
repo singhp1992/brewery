@@ -5,7 +5,7 @@
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state" 
             v-bind:class="[brewerys.showDetail ? 'less': 'more', brewery.state]" >
-                <p>{{ brewery.name }}</p>
+                <h4 v-on:click="fetchAnother()">{{ brewery.name }}</h4>
             </li>
         </ul>
     </div>
@@ -17,7 +17,7 @@ export default {
     name: "Brewerys",
     props: [
         "brewerys",
-        "state"
+        "state",
     ]
 }
 
@@ -35,6 +35,10 @@ export default {
 ul {
   list-style-type: none;
   width: 45%;
+}
+
+h4 {
+    cursor: pointer;
 }
 
 </style>
