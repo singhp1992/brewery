@@ -28,7 +28,7 @@ export default {
   methods: {
     fetchAnother(){
       axios
-      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 100).toString()))
+      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 6000).toString()))
       .then(response => {
             this.info = response.data
         })
