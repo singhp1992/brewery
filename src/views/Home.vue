@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       state: '',
-      info: null
+      brewerys: []
     }
   },
   methods: {
@@ -34,8 +34,8 @@ export default {
     axios
         .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
         .then(response => {
-            this.info = response.data
-            console.log(this.info)
+            this.brewerys = response.data
+            console.log(this.brewerys)
         })
   },
   computed: {
