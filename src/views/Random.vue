@@ -22,7 +22,7 @@ export default {
   name: 'Random',
   data() {
     return {
-      info: null,
+      info: []
     }
   },
   methods: {
