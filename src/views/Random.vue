@@ -2,6 +2,7 @@
   <div class="random">
     <h1>Random</h1>
 
+    <p> {{ info }} </p> 
   </div>
 </template>
 
