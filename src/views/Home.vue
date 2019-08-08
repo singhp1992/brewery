@@ -5,6 +5,7 @@
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
     :state="state" />
+    <Micro :brewerys="brewerys"/>
   </div>
 </template>
 

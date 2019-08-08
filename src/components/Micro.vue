@@ -1,15 +1,22 @@
 <template>
   <div id="micro">
     <h1>Micro</h1>
-    <p>{{ brewery.brewery_type }}</p>
+    <ul :key="brewery.id" 
+    v-for="brewery in brewerys"> 
+        <li> {{ brewery.brewery_type }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Micro' 
+    name: "Micro",
+    props: [
+    "brewerys",
+    ],
 }
+
 
 </script>
 
