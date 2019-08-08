@@ -50,9 +50,3 @@ a {
 }
 
 </style>
-
-                <div id="toggle">
-                    <p>Type: {{ brewery.brewery_type }}</p>
-                    <p class="transform">Location: {{ brewery.street }},  {{ brewery.state }} </p>
-                    <p>Contact: +1 {{ brewery.phone }}</p>
-                </div>
