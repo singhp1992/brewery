@@ -14,7 +14,6 @@
 import Micro from '../components/Micro'
 import Brewpub from '../components/Brewpub'
 import Contract from '../components/Contract'
-import Bar from '../components/Bar'
 import axios from 'axios'
 
 
@@ -24,7 +23,6 @@ export default {
     Micro,
     Brewpub,
     Contract,
-    Bar
   }, 
   data() {
     return {
@@ -66,15 +64,6 @@ export default {
             } 
         });
         return contract;
-    },
-    barList: function () {
-        const bar = [];
-        this.brewerys.forEach((item) => {
-            if (item.brewery_type === "bar") {
-                bar.push(item.name);
-            } 
-        });
-        return bar;
     }
   },
 }
