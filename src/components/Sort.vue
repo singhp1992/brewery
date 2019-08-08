@@ -3,7 +3,7 @@
         Sort by State:  
         <select v-on:change="filterList"> 
             <option value="">All</option>
-            <option v-bind:key="item.id" v-for="item in uniqueItemsList">{{ item }}</option>
+            <option v-bind:key="item" v-for="item in uniqueItemsList">{{ item }}</option>
         </select>
     </div>
 </template>
