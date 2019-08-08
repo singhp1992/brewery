@@ -5,7 +5,7 @@
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
     :state="state"
-    :moreInfo="moreInfo" />
+    :toggleDetails="toggleDetails" />
   </div>
 </template>
 
