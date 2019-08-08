@@ -1,6 +1,6 @@
 <template>
     <div id="details-page"> 
-        <h1></h1>
+        <h1>{{ brewerys.name }}</h1>
         <p> </p>
     </div>
 </template>
@@ -27,4 +27,9 @@ export default {
 </script>
 
 <style>
+
+#details-page {
+    margin-top: 100px;
+}
+
 </style>
