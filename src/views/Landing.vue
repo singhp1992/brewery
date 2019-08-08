@@ -18,10 +18,10 @@ export default {
     background-size: cover;
     background-attachment: fixed;   
     position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .welcome-design {
