@@ -1,8 +1,8 @@
 <template>
   <div id="categories">
     <h1>Categories</h1>
-    <Micro :brewerys="brewerys"
-    :state="state" />
+    <Micro :brewerys="brewerys" 
+    :microList="microList"/>
   </div>
 </template>
 
@@ -18,11 +18,11 @@ export default {
   }, 
   data() {
     return {
-      state: '',
       brewerys: [],
     }
   },
   methods: {
+  
   },
   mounted() {
     axios
@@ -30,6 +30,17 @@ export default {
         .then(response => {
             this.brewerys = response.data
         })
+  },
+  computed: {
+    microList: function () {
+        const micro = [];
+        this.brewerys.forEach((item) => {
+            if (item.brewery_type === "micro") {
+                micro.push(item.name);
+            } 
+        });
+        return micro;
+    }
   },
 }
 

@@ -1,9 +1,8 @@
 <template>
   <div id="micro">
     <h1>Micro</h1>
-    <ul :key="brewery.id" 
-    v-for="brewery in brewerys"> 
-        <li> {{ brewery.brewery_type }}</li>
+    <ul v-bind:key="item.id" v-for="item in microList"> 
+        <li> {{ item  }}</li>
     </ul>
   </div>
 </template>
@@ -14,6 +13,7 @@ export default {
     name: "Micro",
     props: [
         "brewerys",
+        "microList"
     ],
 }
 
