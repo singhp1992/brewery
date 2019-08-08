@@ -5,6 +5,9 @@
         <p class="transform">Location: {{ brewerys.street }},  {{ brewerys.state }} </p>
         <p>Contact: +1 {{ brewerys.phone }}</p>
         <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
+        <div class="back-button">
+            <router-link to='/home'><button>Back</button></router-link>
+        </div>
     </div>
 </template>
 
@@ -45,6 +48,22 @@ export default {
 
 .details-p:visited {
   color: black;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #0e0e0e;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
 </style>
