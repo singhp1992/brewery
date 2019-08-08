@@ -2,7 +2,7 @@
   <div id="categories">
     <h1>Categories</h1>
     <div class="organized">
-      <Micro :brewerys="brewerys" 
+      <Micro 
       :microList="microList"/>
       <Brewpub :brewerys="brewerys" 
       :brewpubList="brewpubList"/>
@@ -51,6 +51,7 @@ export default {
             } 
         });
         return micro;
+        
     },
     brewpubList: function () {
         const brewpub = [];
