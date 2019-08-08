@@ -23,11 +23,6 @@ export default {
 
 <style>
 
-#brewpub {
-    width: 45%;
-    padding-left: 30px;
-}
-
 .brewpub-list {
   list-style-type: none;
   padding-left: 0;

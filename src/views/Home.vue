@@ -33,7 +33,7 @@ export default {
   },
   mounted() {
     axios
-        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
+        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=50')
         .then(response => {
             this.brewerys = response.data
         })

@@ -25,20 +25,13 @@ export default {
 <style scoped>
 
 .brewerys {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-}
-
-#toggle {
-    display: none;
-    text-transform: capitalize;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 .brewery-list {
   list-style-type: none;
-  width: 45%;
 }
 
 h4 {
@@ -47,6 +40,10 @@ h4 {
 
 a {
     color: black;
+}
+
+a:hover {
+    color: darkgrey
 }
 
 </style>

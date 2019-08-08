@@ -23,11 +23,6 @@ export default {
 
 <style>
 
-#contract {
-    width: 45%;
-    padding-left: 30px;
-}
-
 .contract-list {
   list-style-type: none;
   padding-left: 0;

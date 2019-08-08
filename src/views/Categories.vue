@@ -5,7 +5,6 @@
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
       <Contract :contractList="contractList"/>
-      <Bar :barList="barList"/>
     </div>
   </div>
 </template>
@@ -14,7 +13,6 @@
 import Micro from '../components/Micro'
 import Brewpub from '../components/Brewpub'
 import Contract from '../components/Contract'
-import Bar from '../components/Bar'
 import axios from 'axios'
 
 
@@ -24,7 +22,6 @@ export default {
     Micro,
     Brewpub,
     Contract,
-    Bar
   }, 
   data() {
     return {
@@ -33,7 +30,7 @@ export default {
   },
   mounted() {
     axios
-        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
+        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=50')
         .then(response => {
             this.brewerys = response.data
         })
@@ -66,15 +63,6 @@ export default {
             } 
         });
         return contract;
-    },
-    barList: function () {
-        const bar = [];
-        this.brewerys.forEach((item) => {
-            if (item.brewery_type === "bar") {
-                bar.push(item.name);
-            } 
-        });
-        return bar;
     }
   },
 }
@@ -84,11 +72,18 @@ export default {
 <style>
 
 .organized {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.organized > div {
+  width: 40%;
+  margin: 30px;
 }
 
 #categories {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 </style>
