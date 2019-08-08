@@ -1,7 +1,10 @@
 <template>
   <div id="micro">
-    <ul class="micro-list" v-bind:key="item.id" v-for="item in microList"> 
-        <li> {{ item  }}</li>
+    <ul class="micro-list"> 
+        <h5>Micro</h5>
+        <li v-bind:key="item.id" v-for="item in microList"> 
+            <p>{{ item }}</p>
+        </li>
     </ul>
   </div>
 </template>
@@ -22,11 +25,14 @@ export default {
 <style>
 
 #micro {
-  margin-top: 100px;
+    width: 45%;
+    padding-left: 30px;
 }
 
 .micro-list {
   list-style-type: none;
+  padding-left: 0;
+  text-align: left;
 }
 
 </style>

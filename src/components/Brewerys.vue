@@ -1,6 +1,6 @@
 <template>
     <div class="brewerys">
-        <ul>
+        <ul class="brewery-list">
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
@@ -36,7 +36,7 @@ export default {
     text-transform: capitalize;
 }
 
-ul {
+.brewery-list {
   list-style-type: none;
   width: 45%;
 }

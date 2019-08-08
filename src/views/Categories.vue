@@ -1,6 +1,6 @@
 <template>
   <div id="categories">
-    <h1>Micro</h1>
+    <h1>Categories</h1>
     <Micro :brewerys="brewerys" 
     :microList="microList"/>
   </div>
@@ -20,9 +20,6 @@ export default {
     return {
       brewerys: [],
     }
-  },
-  methods: {
-  
   },
   mounted() {
     axios
@@ -48,8 +45,8 @@ export default {
 
 <style>
 
-.categories {
-  margin-top: 200px;
+#categories {
+  margin-top: 100px;
 }
 
 </style>
