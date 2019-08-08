@@ -27,6 +27,7 @@ export default {
 .brewerys {
     text-align: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .brewery-list {
