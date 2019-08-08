@@ -6,6 +6,8 @@
       :microList="microList"/>
       <Brewpub :brewerys="brewerys" 
       :brewpubList="brewpubList"/>
+       <Planning :brewerys="brewerys" 
+      :planningList="planningList"/>
     </div>
   </div>
 </template>
@@ -13,6 +15,7 @@
 <script>
 import Micro from '../components/Micro'
 import Brewpub from '../components/Brewpub'
+import Planning from '../components/Planning'
 import axios from 'axios'
 
 
@@ -20,7 +23,8 @@ export default {
   name: 'Categories',
   components: {
     Micro,
-    Brewpub
+    Brewpub,
+    Planning
   }, 
   data() {
     return {
@@ -52,6 +56,15 @@ export default {
             } 
         });
         return brewpub;
+    },
+    planningList: function () {
+        const planning = [];
+        this.brewerys.forEach((item) => {
+            if (item.brewery_type === "planning") {
+                planning.push(item.name);
+            } 
+        });
+        return planning;
     }
   },
 }
