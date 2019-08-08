@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            id: null,
+            id: this.$route.params.id,
             blog: {}
         }
     }
