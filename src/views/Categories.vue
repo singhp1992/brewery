@@ -72,11 +72,18 @@ export default {
 <style>
 
 .organized {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.organized > div {
+  width: 40%;
+  margin: 30px;
 }
 
 #categories {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 </style>

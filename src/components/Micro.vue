@@ -24,10 +24,11 @@ export default {
 
 <style>
 
-#micro {
+/* #micro {
     width: 45%;
-    padding-left: 30px;
-}
+    padding-left: 50px;
+    padding-right: 50px;
+} */
 
 .micro-list {
   list-style-type: none;
