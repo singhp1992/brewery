@@ -1,6 +1,7 @@
 <template>
   <div id="categories">
     <h1>Categories</h1>
+    <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
@@ -10,9 +11,9 @@
 </template>
 
 <script>
-import Micro from '../components/Micro'
-import Brewpub from '../components/Brewpub'
-import Contract from '../components/Contract'
+import Micro from '@/components/Micro.vue'
+import Brewpub from '@/components/Brewpub.vue'
+import Contract from '@/components/Contract.vue'
 import axios from 'axios'
 
 
@@ -40,7 +41,7 @@ export default {
         const micro = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "micro") {
-                micro.push(item.name);
+                micro.push(item);
             } 
         });
         return micro;
@@ -50,7 +51,7 @@ export default {
         const brewpub = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "brewpub") {
-                brewpub.push(item.name);
+                brewpub.push(item);
             } 
         });
         return brewpub;
@@ -59,7 +60,7 @@ export default {
         const contract = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "contract") {
-                contract.push(item.name);
+                contract.push(item);
             } 
         });
         return contract;
@@ -71,14 +72,22 @@ export default {
 
 <style>
 
+.item {
+  color: black;
+}
+
+.item:hover {
+  color: darkgray;
+}
+
 .organized {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .organized > div {
-  margin: 20px;
+  margin: 10px;
 }
 
 #categories {
