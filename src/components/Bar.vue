@@ -14,7 +14,6 @@
 export default {
     name: "bar",
     props: [
-        "brewerys",
         "barList"
     ],
 }
