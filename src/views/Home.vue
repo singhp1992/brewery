@@ -4,14 +4,13 @@
     <Sort :filterList="filterList" 
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
-    :state="state"
-    :moreInfo="moreInfo" />
+    :state="state" />
   </div>
 </template>
 
 <script>
 
-import Brewerys from '../components/Brewerys'; 
+import Brewerys from '../components/Brewerys'
 import Sort from '../components/Sort'
 import axios from 'axios'
 
@@ -19,18 +18,15 @@ export default {
   name: 'Home',
   components: {
     Brewerys,
-    Sort
+    Sort,
   },
   data() {
     return {
       state: '',
-      brewerys: []
+      brewerys: [],
     }
   },
   methods: {
-    moreInfo: function () {
-      document.getElementById("toggle").style.display="inline"
-    },
     filterList: function () {
       this.state = event.target.value;
     }
