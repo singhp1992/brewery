@@ -3,13 +3,8 @@
         <ul>
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
-            v-show="state === '' || state === brewery.state" >
-                <h4 v-on:click="moreInfo()">{{ brewery.name }}</h4>
-                <div id="toggle">
-                    <p>Type: {{ brewery.brewery_type }}</p>
-                    <p class="transform">Location: {{ brewery.street }},  {{ brewery.state }} </p>
-                    <p>Contact: +1 {{ brewery.phone }}</p>
-                </div>
+            v-show="state === '' || state === brewery.state"  >
+                <h4>{{ brewery.name }}</h4>
             </li>
         </ul>
     </div>
@@ -22,7 +17,6 @@ export default {
     props: [
         "brewerys",
         "state",
-        "moreInfo"
     ]
 }
 
@@ -52,3 +46,9 @@ h4 {
 }
 
 </style>
+
+                <div id="toggle">
+                    <p>Type: {{ brewery.brewery_type }}</p>
+                    <p class="transform">Location: {{ brewery.street }},  {{ brewery.state }} </p>
+                    <p>Contact: +1 {{ brewery.phone }}</p>
+                </div>
