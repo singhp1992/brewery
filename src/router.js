@@ -37,7 +37,7 @@ export default new Router({
       }
     },
     {
-      path: './home/:id',
+      path: '/home/:id',
       component: Details,
     }
   ],
