@@ -29,8 +29,11 @@ export default {
     }
   },
   methods: {
-    moreInfo: function () {
-      document.getElementById("toggle").style.display="inline"
+    // moreInfo: function () {
+    //   document.getElementById("toggle").style.display="inline"
+    // },
+    toggleDetails: function (brewery) {
+      brewery.showDetail = !brewery.showDetail
     },
     filterList: function () {
       this.state = event.target.value;
