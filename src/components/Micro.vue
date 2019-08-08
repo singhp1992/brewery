@@ -1,7 +1,7 @@
 <template>
   <div id="micro">
     <ul class="micro-list"> 
-        <h5>Micro</h5>
+        <h3>Micro</h3>
         <li v-bind:key="item.id" v-for="item in microList"> 
             <p>{{ item }}</p>
         </li>

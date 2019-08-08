@@ -1,20 +1,26 @@
 <template>
   <div id="categories">
     <h1>Categories</h1>
-    <Micro :brewerys="brewerys" 
-    :microList="microList"/>
+    <div class="organized">
+      <Micro :brewerys="brewerys" 
+      :microList="microList"/>
+      <Brewpub :brewerys="brewerys" 
+      :brewpubList="brewpubList"/>
+    </div>
   </div>
 </template>
 
 <script>
 import Micro from '../components/Micro'
+import Brewpub from '../components/Brewpub'
 import axios from 'axios'
 
 
 export default {
   name: 'Categories',
   components: {
-    Micro
+    Micro,
+    Brewpub
   }, 
   data() {
     return {
@@ -37,6 +43,15 @@ export default {
             } 
         });
         return micro;
+    },
+    brewpubList: function () {
+        const brewpub = [];
+        this.brewerys.forEach((item) => {
+            if (item.brewery_type === "brewpub") {
+                brewpub.push(item.name);
+            } 
+        });
+        return brewpub;
     }
   },
 }
@@ -44,6 +59,10 @@ export default {
 </script>
 
 <style>
+
+.organized {
+  display: inline-flex;
+}
 
 #categories {
   margin-top: 100px;
