@@ -4,7 +4,8 @@
     <div class="random-info">
         <p class="transform">Name: {{ info.name }}</p>
         <p class="transform">Type: {{ info.brewery_type }}</p>
-        <p class="transform">Location: {{ info.street }},  {{ info.state }} </p>
+        <p class="transform">Address: {{ info.street }} </p> 
+        <p> {{ info.state }} </p>
         <p>Contact: +1 {{ info.phone }}</p>
         <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
     </div>
@@ -28,7 +29,7 @@ export default {
   methods: {
     fetchAnother(){
       axios
-      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 11).toString()))
+      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 650).toString()))
       .then(response => {
             this.info = response.data
         })
@@ -36,7 +37,7 @@ export default {
   },
   mounted() {
     axios
-        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 11).toString()))
+        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 650).toString()))
         .then(response => {
             this.info = response.data
         })
@@ -70,7 +71,7 @@ export default {
 
 .random-button {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 button {
