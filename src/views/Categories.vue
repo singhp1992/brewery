@@ -6,8 +6,8 @@
       :microList="microList"/>
       <Brewpub :brewerys="brewerys" 
       :brewpubList="brewpubList"/>
-       <Planning :brewerys="brewerys" 
-      :planningList="planningList"/>
+      <Contract :brewerys="brewerys" 
+      :contractList="contractList"/>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@
 <script>
 import Micro from '../components/Micro'
 import Brewpub from '../components/Brewpub'
-import Planning from '../components/Planning'
+import Contract from '../components/Contract'
 import axios from 'axios'
 
 
@@ -24,7 +24,7 @@ export default {
   components: {
     Micro,
     Brewpub,
-    Planning
+    Contract
   }, 
   data() {
     return {
@@ -57,14 +57,14 @@ export default {
         });
         return brewpub;
     },
-    planningList: function () {
-        const planning = [];
+    contractList: function () {
+        const contract = [];
         this.brewerys.forEach((item) => {
-            if (item.brewery_type === "planning") {
-                planning.push(item.name);
+            if (item.brewery_type === "contract") {
+                contract.push(item.name);
             } 
         });
-        return planning;
+        return contract;
     }
   },
 }
