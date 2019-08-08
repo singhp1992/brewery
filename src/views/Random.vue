@@ -1,8 +1,7 @@
 <template>
   <div class="random">
-    <h1>Random</h1>
+    <h1 class="transform">{{ info.name }}</h1>
     <div class="random-info">
-        <p class="transform">Name: {{ info.name }}</p>
         <p class="transform">Type: {{ info.brewery_type }}</p>
         <p class="transform">Address: {{ info.street }} </p> 
         <p> {{ info.state }} </p>
@@ -54,7 +53,7 @@ export default {
 }
 
 .random-info {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .transform {
