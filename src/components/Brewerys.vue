@@ -4,7 +4,7 @@
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
-                <h4>{{ brewery.name }}</h4>
+                <router-link><h4>{{ brewery.name }}</h4></router-link>
             </li>
         </ul>
     </div>
