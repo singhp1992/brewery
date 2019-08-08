@@ -54,7 +54,7 @@ export default {
 }
 
 .random-info {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .transform {
