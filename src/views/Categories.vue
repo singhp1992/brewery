@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Micro from '../components/Micro'
-import Brewpub from '../components/Brewpub'
-import Contract from '../components/Contract'
+import Micro from '@/components/Micro.vue'
+import Brewpub from '@/components/Brewpub.vue'
+import Contract from '@/components/Contract.vue'
 import axios from 'axios'
 
 
