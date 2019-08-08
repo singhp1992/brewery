@@ -13,7 +13,7 @@
 export default {
     name: "Micro",
     props: [
-    "brewerys",
+        "brewerys",
     ],
 }
 

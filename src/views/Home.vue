@@ -5,7 +5,6 @@
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
     :state="state" />
-    <Micro :brewerys="brewerys"/>
   </div>
 </template>
 
@@ -13,7 +12,6 @@
 
 import Brewerys from '../components/Brewerys'
 import Sort from '../components/Sort'
-import Micro from '../components/Micro'
 import axios from 'axios'
 
 export default {
@@ -21,7 +19,6 @@ export default {
   components: {
     Brewerys,
     Sort,
-    Micro
   },
   data() {
     return {

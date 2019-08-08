@@ -1,14 +1,36 @@
 <template>
-  <div class="categories">
+  <div id="categories">
     <h1>Categories</h1>
-    <p id="micro">Micro</p>
+    <Micro :brewerys="brewerys"
+    :state="state" />
   </div>
 </template>
 
 <script>
+import Micro from '../components/Micro'
+import axios from 'axios'
+
 
 export default {
-  name: 'Categories' 
+  name: 'Categories',
+  components: {
+    Micro
+  }, 
+  data() {
+    return {
+      state: '',
+      brewerys: [],
+    }
+  },
+  methods: {
+  },
+  mounted() {
+    axios
+        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=10')
+        .then(response => {
+            this.brewerys = response.data
+        })
+  },
 }
 
 </script>
