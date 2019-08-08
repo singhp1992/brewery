@@ -10,7 +10,7 @@
 <script>
 
 export default {
-  nav: 'Nav'
+  name: 'Nav'
 }
 
 </script>

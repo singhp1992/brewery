@@ -32,6 +32,7 @@ export default {
 
 .brewery-list {
   list-style-type: none;
+  padding-left: 0px;
 }
 
 h4 {

@@ -28,7 +28,7 @@ export default {
   methods: {
     fetchAnother(){
       axios
-      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 51).toString()))
+      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 600).toString()))
       .then(response => {
             this.info = response.data
         })
@@ -36,7 +36,7 @@ export default {
   },
   mounted() {
     axios
-        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 51).toString()))
+        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 600).toString()))
         .then(response => {
             this.info = response.data
         })

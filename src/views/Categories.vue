@@ -74,11 +74,11 @@ export default {
 .organized {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .organized > div {
-  width: 40%;
-  margin: 30px;
+  margin: 20px;
 }
 
 #categories {
