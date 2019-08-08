@@ -1,0 +1,17 @@
+<template>
+    <div id="single-blog"> 
+        <h1></h1>
+        <article> </article>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            id: null,
+            blog: {}
+        }
+    }
+}
+</script>
