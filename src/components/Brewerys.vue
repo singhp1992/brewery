@@ -4,7 +4,7 @@
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
-                <router-link><h4>{{ brewery.name }}</h4></router-link>
+                <router-link v-bind:to="'/home/' + brewery.id"><h4>{{ brewery.name }}</h4></router-link>
             </li>
         </ul>
     </div>
@@ -43,6 +43,10 @@ export default {
 
 h4 {
     cursor: pointer;
+}
+
+a {
+    color: black;
 }
 
 </style>
