@@ -41,7 +41,7 @@ export default {
         const micro = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "micro") {
-                micro.push(item.name);
+                micro.push(item);
             } 
         });
         return micro;
@@ -51,7 +51,7 @@ export default {
         const brewpub = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "brewpub") {
-                brewpub.push(item.name);
+                brewpub.push(item);
             } 
         });
         return brewpub;
@@ -60,7 +60,7 @@ export default {
         const contract = [];
         this.brewerys.forEach((item) => {
             if (item.brewery_type === "contract") {
-                contract.push(item.name);
+                contract.push(item);
             } 
         });
         return contract;
@@ -71,6 +71,14 @@ export default {
 </script>
 
 <style>
+
+.item {
+  color: black;
+}
+
+.item:hover {
+  color: darkgray;
+}
 
 .organized {
   display: flex;

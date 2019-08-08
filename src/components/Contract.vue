@@ -1,9 +1,9 @@
 <template>
   <div id="contract">
     <ul class="contract-list"> 
-        <h3>Contract</h3>
+        <h2>Contract</h2>
         <li v-bind:key="item.id" v-for="item in contractList"> 
-            <p>{{ item }}</p>
+            <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
         </li>
     </ul>
   </div>
