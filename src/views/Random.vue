@@ -85,5 +85,3 @@ button {
 }
 
 </style>
-
-'https://api.openbrewerydb.org/breweries/0002'

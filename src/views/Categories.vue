@@ -2,14 +2,10 @@
   <div id="categories">
     <h1>Categories</h1>
     <div class="organized">
-      <Micro :brewerys="brewerys" 
-      :microList="microList"/>
-      <Brewpub :brewerys="brewerys" 
-      :brewpubList="brewpubList"/>
-      <Contract :brewerys="brewerys" 
-      :contractList="contractList"/>
-      <Bar :brewerys="brewerys" 
-      :barList="barList"/>
+      <Micro :microList="microList"/>
+      <Brewpub :brewpubList="brewpubList"/>
+      <Contract :contractList="contractList"/>
+      <Bar :barList="barList"/>
     </div>
   </div>
 </template>
@@ -51,6 +47,7 @@ export default {
             } 
         });
         return micro;
+        
     },
     brewpubList: function () {
         const brewpub = [];

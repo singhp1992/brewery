@@ -14,7 +14,6 @@
 export default {
     name: "Brewpub",
     props: [
-        "brewerys",
         "brewpubList"
     ],
 }

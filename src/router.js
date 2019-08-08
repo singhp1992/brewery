@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Details from './components/Details.vue'
 
 Vue.use(Router);
 
@@ -34,6 +35,10 @@ export default new Router({
       beforeEnter() {
         location.href = 'https://github.com/singhp1992'
       }
+    },
+    {
+      path: '/home/:id',
+      component: Details,
     }
   ],
 });

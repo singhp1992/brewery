@@ -4,7 +4,7 @@
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
-                <h4>{{ brewery.name }}</h4>
+                <router-link v-bind:to="'/home/' + brewery.id"><h4>{{ brewery.name }}</h4></router-link>
             </li>
         </ul>
     </div>
@@ -45,10 +45,8 @@ h4 {
     cursor: pointer;
 }
 
-</style>
+a {
+    color: black;
+}
 
-                <div id="toggle">
-                    <p>Type: {{ brewery.brewery_type }}</p>
-                    <p class="transform">Location: {{ brewery.street }},  {{ brewery.state }} </p>
-                    <p>Contact: +1 {{ brewery.phone }}</p>
-                </div>
+</style>
