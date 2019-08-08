@@ -5,7 +5,6 @@
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
       <Contract :contractList="contractList"/>
-      <Bar :barList="barList"/>
     </div>
   </div>
 </template>
