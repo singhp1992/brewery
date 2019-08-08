@@ -24,7 +24,8 @@ export default {
   data() {
     return {
       state: '',
-      brewerys: []
+      brewerys: [],
+      showDetail: false
     }
   },
   methods: {
