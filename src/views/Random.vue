@@ -49,7 +49,7 @@ export default {
 <style>
 
 .random {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .random-info {
