@@ -37,6 +37,12 @@ export default new Router({
       }
     },
     {
+      path: '/api',
+      beforeEnter() {
+        location.href = 'https://www.openbrewerydb.org/#documentation'
+      }
+    },
+    {
       path: '/home/:id',
       component: Details,
     }
