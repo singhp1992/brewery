@@ -83,11 +83,11 @@ export default {
 .organized {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .organized > div {
-  margin: 20px;
+  margin: 10px;
 }
 
 #categories {
