@@ -1,6 +1,6 @@
 <template>
   <div id="categories">
-    <h1>Categories</h1>
+    <h1>Micro</h1>
     <Micro :brewerys="brewerys" 
     :microList="microList"/>
   </div>
@@ -49,7 +49,7 @@ export default {
 <style>
 
 .categories {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 </style>
