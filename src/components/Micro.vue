@@ -1,21 +1,21 @@
 <template>
-  <div class="categories">
-    <h1>Categories</h1>
-    <p id="micro">Micro</p>
+  <div id="micro">
+    <h1>Micro</h1>
+    <p>{{ brewery.brewery_type }}</p>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Categories' 
+  name: 'Micro' 
 }
 
 </script>
 
 <style>
 
-.categories {
+#micro {
   margin-top: 100px;
 }
 

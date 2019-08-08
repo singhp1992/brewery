@@ -10,15 +10,17 @@
 
 <script>
 
-import Brewerys from '../components/Brewerys'; 
+import Brewerys from '../components/Brewerys'
 import Sort from '../components/Sort'
+import Micro from '../components/Micro'
 import axios from 'axios'
 
 export default {
   name: 'Home',
   components: {
     Brewerys,
-    Sort
+    Sort,
+    Micro
   },
   data() {
     return {
