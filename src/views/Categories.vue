@@ -1,6 +1,7 @@
 <template>
   <div id="categories">
     <h1>Categories</h1>
+    <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
