@@ -1,8 +1,8 @@
 <template>
-  <div id="brewpub">
-    <ul class="brewpub-list"> 
-        <h3>Brewpub</h3>
-        <li v-bind:key="item.id" v-for="item in brewpubList"> 
+  <div id="bar">
+    <ul class="bar-list"> 
+        <h3>Bar</h3>
+        <li v-bind:key="item.id" v-for="item in barList"> 
             <p>{{ item }}</p>
         </li>
     </ul>
@@ -12,10 +12,10 @@
 <script>
 
 export default {
-    name: "Brewpub",
+    name: "bar",
     props: [
         "brewerys",
-        "brewpubList"
+        "barList"
     ],
 }
 
@@ -24,12 +24,12 @@ export default {
 
 <style>
 
-#brewpub {
+#bar {
     width: 45%;
     padding-left: 30px;
 }
 
-.brewpub-list {
+.bar-list {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
