@@ -72,6 +72,10 @@ export default {
 
 <style>
 
+h2 {
+  text-decoration: underline;
+}
+
 .item {
   color: black;
 }
