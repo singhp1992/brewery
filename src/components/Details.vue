@@ -8,6 +8,7 @@
             <p>Contact: +1 {{ brewerys.phone }}</p>
             <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
                 <div class="back-button">
+                    <!-- on click will go back to previous page (either home or categories page) -->
                     <button @click="$router.go(-1)">Back</button>
                 </div>
         </div> 

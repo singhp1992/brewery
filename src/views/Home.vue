@@ -40,7 +40,7 @@ export default {
   computed: {
     // Changed the foreach to a map function
     // creating a new array of the states of each brewery
-    // if statement removes any repeating states
+    // if statement avoids any repeating states
     uniqueItemsList: function() {
       const states = [];
       this.brewerys.map(item => {
