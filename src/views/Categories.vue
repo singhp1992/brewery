@@ -84,9 +84,11 @@ h2 {
 
 .organized {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 100px;
+  height: 350px;
 }
 
 .organized > div {
@@ -98,9 +100,21 @@ h2 {
   margin-bottom: 100px;
 }
 
+#micro {
+  height: fit-content;
+}
+
+#brewpub {
+  height: fit-content;
+}
+
 @media (max-width: 1024px) {
   .organized {
     display: inline-block;
+  }
+
+  #brewpub {
+    height: fit-content;
   }
 }
 </style>
