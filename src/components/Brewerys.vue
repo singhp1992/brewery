@@ -27,6 +27,10 @@ export default {
 .brewery-list {
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
 }
 
 h4 {
