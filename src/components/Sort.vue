@@ -8,16 +8,11 @@
     </div>
 </template>
 
-<script> 
-
+<script>
 export default {
-    name: "Sort",
-    props: [
-        "uniqueItemsList",
-        "filterList"
-    ],
-}
-
+  name: "Sort",
+  props: ["uniqueItemsList", "filterList"]
+};
 </script>
 
 <style>
