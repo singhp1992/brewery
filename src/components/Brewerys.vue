@@ -31,6 +31,9 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
   height: 350px;
+  margin-right: 120px;
+  justify-content: space-around;
+  margin-left: 120px;
 }
 
 h4 {
