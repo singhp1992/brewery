@@ -22,8 +22,4 @@ export default {
   padding-left: 0;
   text-align: left;
 }
-
-.brewpub {
-  height: fit-content;
-}
 </style>
