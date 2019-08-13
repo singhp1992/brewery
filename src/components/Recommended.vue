@@ -26,6 +26,7 @@ export default {
     axios
       .get("https://api.openbrewerydb.org/breweries/" + this.id)
       .then(response => {
+        console.log(response.data);
         this.brewerys = response.data;
       });
   }
