@@ -22,4 +22,8 @@ export default {
   padding-left: 0;
   text-align: left;
 }
+
+.contract {
+  height: fit-content;
+}
 </style>
