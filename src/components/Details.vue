@@ -9,7 +9,7 @@
         <div class="back-button">
             <button @click="$router.go(-1)">Back</button>
         </div>
-        <Reco />
+        <Reco v-if="brewerys.state === 'Arizona'"/>
     </div>
 </template>
 
