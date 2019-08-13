@@ -94,4 +94,10 @@ h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+@media (max-width: 1024px) {
+  .organized {
+    display: inline-block;
+  }
+}
 </style>
