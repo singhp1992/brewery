@@ -38,7 +38,7 @@ export default {
   computed: {
     microList: function() {
       const micro = [];
-      this.brewerys.forEach(item => {
+      this.brewerys.map(item => {
         if (item.brewery_type === "micro") {
           micro.push(item);
         }
@@ -47,7 +47,7 @@ export default {
     },
     brewpubList: function() {
       const brewpub = [];
-      this.brewerys.forEach(item => {
+      this.brewerys.map(item => {
         if (item.brewery_type === "brewpub") {
           brewpub.push(item);
         }
@@ -56,7 +56,7 @@ export default {
     },
     contractList: function() {
       const contract = [];
-      this.brewerys.forEach(item => {
+      this.brewerys.map(item => {
         if (item.brewery_type === "contract") {
           contract.push(item);
         }
