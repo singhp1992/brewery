@@ -27,6 +27,13 @@ export default {
 .brewery-list {
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
+  margin: 0 120px;
+  justify-content: space-around;
+  font-size: large;
 }
 
 h4 {
@@ -39,5 +46,11 @@ a {
 
 a:hover {
   color: darkgrey;
+}
+
+@media (max-width: 1024px) {
+  .brewery-list {
+    display: inline;
+  }
 }
 </style>

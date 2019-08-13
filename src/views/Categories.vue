@@ -84,6 +84,7 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  margin: 0 100px;
 }
 
 .organized > div {
@@ -93,5 +94,11 @@ h2 {
 #categories {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1024px) {
+  .organized {
+    display: inline-block;
+  }
 }
 </style>

@@ -103,4 +103,10 @@ export default {
     opacity: 1;
   }
 }
+
+@media (max-width: 1024px) {
+  .fade-header {
+    margin-top: 150px;
+  }
+}
 </style>
