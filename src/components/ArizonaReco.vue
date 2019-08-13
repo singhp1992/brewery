@@ -1,6 +1,6 @@
 <template>
-    <div id="recommended-page"> 
-        <h1 class="transform">Recommended Breweries</h1>
+    <div id="arizona"> 
+        <h3 class="transform">Recommended Breweries in Arizona</h3>
         <p class="transform">{{ arizona[15].name }}</p>
         <p class="transform">{{ arizona[16].name }}</p>
         <p class="transform">{{ arizona[17].name }}</p>
@@ -29,10 +29,6 @@ export default {
 </script>
 
 <style>
-#recommended-page {
-  margin-bottom: 200px;
-}
-
 .transform {
   text-transform: capitalize;
 }

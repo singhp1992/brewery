@@ -1,14 +1,16 @@
 <template>
-    <div id="details-page"> 
-        <h1 class="transform">{{ brewerys.name }}</h1>
-        <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
-        <p class="transform">Address: {{ brewerys.street }} </p>
-        <p> {{ brewerys.state }} </p>
-        <p>Contact: +1 {{ brewerys.phone }}</p>
-        <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
-        <div class="back-button">
-            <button @click="$router.go(-1)">Back</button>
-        </div>
+    <div id="details-page">
+        <div id="deets">
+            <h3 class="transform">{{ brewerys.name }}</h3>
+            <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
+            <p class="transform">Address: {{ brewerys.street }} </p>
+            <p> {{ brewerys.state }} </p>
+            <p>Contact: +1 {{ brewerys.phone }}</p>
+            <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
+                <div class="back-button">
+                    <button @click="$router.go(-1)">Back</button>
+                </div>
+        </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
         <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
     </div>
@@ -41,6 +43,12 @@ export default {
 <style>
 #details-page {
   margin-top: 200px;
+  display: inline-flex;
+}
+
+#deets,
+#arizona {
+  margin: 0 75px;
 }
 
 .transform {
