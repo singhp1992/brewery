@@ -1,5 +1,6 @@
 <template>
     <div class="sort">
+        <!-- Added a label element to correspond with the select element -->
         <label for="sort-by-state"> Sort by State: </label>
         <select id="sort-by-state" v-on:change="filterList"> 
             <option value="">All</option>
