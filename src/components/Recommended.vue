@@ -6,9 +6,6 @@
         <p> {{ brewerys.state }} </p>
         <p>Contact: +1 {{ brewerys.phone }}</p>
         <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
-        <div class="back-button">
-            <button @click="$router.go(-1)">Back</button>
-        </div>
     </div>
 </template>
 
@@ -26,7 +23,6 @@ export default {
     axios
       .get("https://api.openbrewerydb.org/breweries/" + this.id)
       .then(response => {
-        console.log(response.data);
         this.brewerys = response.data;
       });
   }
