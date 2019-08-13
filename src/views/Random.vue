@@ -25,6 +25,7 @@ export default {
     };
   },
   methods: {
+    // on button click will concatenate a new, random id to the api call
     fetchAnother() {
       axios
         .get(
@@ -39,6 +40,7 @@ export default {
   },
   mounted() {
     axios
+      // accessing random page will provide a random id to the end of the api call
       .get(
         "https://api.openbrewerydb.org/breweries/".concat(
           Math.floor(Math.random() * 600).toString()

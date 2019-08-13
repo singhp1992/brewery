@@ -26,6 +26,7 @@ export default {
     };
   },
   methods: {
+    // filters through brewerys that match the corresponded selected state 
     filterList: function() {
       this.state = event.target.value;
     }
