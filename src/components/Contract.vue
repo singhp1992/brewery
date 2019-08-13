@@ -10,23 +10,16 @@
 </template>
 
 <script>
-
 export default {
-    name: "contract",
-    props: [
-        "contractList"
-    ],
-}
-
-
+  name: "contract",
+  props: ["contractList"]
+};
 </script>
 
 <style>
-
 .contract-list {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
 }
-
 </style>

@@ -9,15 +9,12 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Footer'
-}
-
+  name: "Footer"
+};
 </script>
 
 <style>
-
 #footer {
   position: fixed;
   left: 0;
@@ -30,11 +27,10 @@ export default {
   height: 5%;
   padding-top: 10px;
   border-top: 2px solid black;
-  box-shadow: 0 -5px 16px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 #footer a {
   color: goldenrod;
 }
-
 </style>

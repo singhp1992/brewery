@@ -15,39 +15,43 @@
 </template>
 
 <script>
-
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'Random',
+  name: "Random",
   data() {
     return {
       info: []
-    }
+    };
   },
   methods: {
-    fetchAnother(){
+    fetchAnother() {
       axios
-      .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 600).toString()))
-      .then(response => {
-            this.info = response.data
-        })
+        .get(
+          "https://api.openbrewerydb.org/breweries/".concat(
+            Math.floor(Math.random() * 600).toString()
+          )
+        )
+        .then(response => {
+          this.info = response.data;
+        });
     }
   },
   mounted() {
     axios
-        .get("https://api.openbrewerydb.org/breweries/".concat(Math.floor(Math.random() * 600).toString()))
-        .then(response => {
-            this.info = response.data
-        })
-  },
-}
-
-
+      .get(
+        "https://api.openbrewerydb.org/breweries/".concat(
+          Math.floor(Math.random() * 600).toString()
+        )
+      )
+      .then(response => {
+        this.info = response.data;
+      });
+  }
+};
 </script>
 
 <style>
-
 .random {
   margin-top: 200px;
 }
@@ -69,20 +73,19 @@ export default {
 }
 
 .random-button {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 button {
-    background-color: #0e0e0e;
-    color: white;
-    width: 200px;
-    height: 50px;
-    font-size: 16px;
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
-    cursor: pointer;
-    font-family: 'Roboto Mono', monospace, sans-serif;
+  background-color: #0e0e0e;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace, sans-serif;
 }
-
 </style>
 

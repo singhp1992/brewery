@@ -10,24 +10,18 @@
     </div>
 </template>
 
-<script> 
-
+<script>
 export default {
-    name: "Brewerys",
-    props: [
-        "brewerys",
-        "state",
-    ]
-}
-
+  name: "Brewerys",
+  props: ["brewerys", "state"]
+};
 </script>
 
 <style scoped>
-
 .brewerys {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 100px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 .brewery-list {
@@ -36,15 +30,14 @@ export default {
 }
 
 h4 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: darkgrey
+  color: darkgrey;
 }
-
 </style>

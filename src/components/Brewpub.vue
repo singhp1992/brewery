@@ -10,23 +10,16 @@
 </template>
 
 <script>
-
 export default {
-    name: "Brewpub",
-    props: [
-        "brewpubList"
-    ],
-}
-
-
+  name: "Brewpub",
+  props: ["brewpubList"]
+};
 </script>
 
 <style>
-
 .brewpub-list {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
 }
-
 </style>

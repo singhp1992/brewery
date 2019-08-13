@@ -11,67 +11,63 @@
 </template>
 
 <script>
-import Micro from '@/components/Micro.vue'
-import Brewpub from '@/components/Brewpub.vue'
-import Contract from '@/components/Contract.vue'
-import axios from 'axios'
-
+import Micro from "@/components/Micro.vue";
+import Brewpub from "@/components/Brewpub.vue";
+import Contract from "@/components/Contract.vue";
+import axios from "axios";
 
 export default {
-  name: 'Categories',
+  name: "Categories",
   components: {
     Micro,
     Brewpub,
-    Contract,
-  }, 
+    Contract
+  },
   data() {
     return {
-      brewerys: [],
-    }
+      brewerys: []
+    };
   },
   mounted() {
     axios
-        .get('https://api.openbrewerydb.org/breweries?page=1&per_page=50')
-        .then(response => {
-            this.brewerys = response.data
-        })
+      .get("https://api.openbrewerydb.org/breweries?page=1&per_page=50")
+      .then(response => {
+        this.brewerys = response.data;
+      });
   },
   computed: {
-    microList: function () {
-        const micro = [];
-        this.brewerys.forEach((item) => {
-            if (item.brewery_type === "micro") {
-                micro.push(item);
-            } 
-        });
-        return micro;
-        
+    microList: function() {
+      const micro = [];
+      this.brewerys.forEach(item => {
+        if (item.brewery_type === "micro") {
+          micro.push(item);
+        }
+      });
+      return micro;
     },
-    brewpubList: function () {
-        const brewpub = [];
-        this.brewerys.forEach((item) => {
-            if (item.brewery_type === "brewpub") {
-                brewpub.push(item);
-            } 
-        });
-        return brewpub;
+    brewpubList: function() {
+      const brewpub = [];
+      this.brewerys.forEach(item => {
+        if (item.brewery_type === "brewpub") {
+          brewpub.push(item);
+        }
+      });
+      return brewpub;
     },
-    contractList: function () {
-        const contract = [];
-        this.brewerys.forEach((item) => {
-            if (item.brewery_type === "contract") {
-                contract.push(item);
-            } 
-        });
-        return contract;
+    contractList: function() {
+      const contract = [];
+      this.brewerys.forEach(item => {
+        if (item.brewery_type === "contract") {
+          contract.push(item);
+        }
+      });
+      return contract;
     }
-  },
-}
-
+  }
+};
 </script>
 
 <style>
-
 h2 {
   text-decoration: underline;
 }
@@ -98,5 +94,4 @@ h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 </style>

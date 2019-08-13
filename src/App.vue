@@ -7,29 +7,24 @@
 </template>
 
 <script>
-import Nav from './views/Nav.vue';
-import Footer from './views/Footer.vue';
-
+import Nav from "./views/Nav.vue";
+import Footer from "./views/Footer.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Nav,
     Footer
   }
-}
-
+};
 </script>
 
 <style>
-
 #app {
-  font-family: 'Roboto Mono', monospace, sans-serif;
+  font-family: "Roboto Mono", monospace, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
 }
-
-
 </style>

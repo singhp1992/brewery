@@ -8,15 +8,12 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Nav'
-}
-
+  name: "Nav"
+};
 </script>
 
 <style>
-
 #nav {
   padding: 30px;
   position: fixed;
@@ -31,7 +28,7 @@ export default {
   border-bottom: 2px solid black;
   z-index: 10;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-} 
+}
 
 a {
   font-weight: bold;
@@ -39,11 +36,11 @@ a {
   color: white;
 }
 
-a:visited  {
+a:visited {
   color: white;
 }
 
 #nav a.router-link-exact-active {
-  color: goldenrod
-} 
+  color: goldenrod;
+}
 </style>

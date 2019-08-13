@@ -11,23 +11,16 @@
 </template>
 
 <script>
-
 export default {
-    name: "Micro",
-    props: [
-        "microList"
-    ],
-}
-
-
+  name: "Micro",
+  props: ["microList"]
+};
 </script>
 
 <style>
-
 .micro-list {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
 }
-
 </style>
