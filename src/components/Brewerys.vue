@@ -31,9 +31,8 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
   height: 350px;
-  margin-right: 120px;
+  margin: 0 120px;
   justify-content: space-around;
-  margin-left: 120px;
   font-size: large;
 }
 
