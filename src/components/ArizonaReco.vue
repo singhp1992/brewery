@@ -45,5 +45,9 @@ export default {
 .details-p:visited {
   color: black;
 }
+
+ul {
+  padding-left: 0;
+}
 </style>
 
