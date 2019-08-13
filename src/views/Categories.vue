@@ -35,7 +35,7 @@ export default {
         this.brewerys = response.data;
       });
   },
-  // changed all the foreach functions to map
+  // Revision: changed all the foreach functions to map
   // each list function creates an array of brewerys based on their type
   computed: {
     microList: function() {
@@ -84,8 +84,8 @@ h2 {
 
 .organized {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 100px;
 }
 
@@ -98,7 +98,31 @@ h2 {
   margin-bottom: 100px;
 }
 
-@media (max-width: 1024px) {
+#micro {
+  height: fit-content;
+}
+
+#brewpub {
+  height: fit-content;
+}
+
+@media (max-width: 1186px) {
+  .organized {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 350px;
+    width: 900px;
+  }
+
+  #brewpub {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 820px) {
   .organized {
     display: inline-block;
   }
