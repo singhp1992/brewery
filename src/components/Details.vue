@@ -38,7 +38,7 @@ export default {
   },
   mounted() {
     axios
-    // fetching api data based on the id of the clicked brewery
+      // fetching api data based on the id of the clicked brewery
       .get("https://api.openbrewerydb.org/breweries/" + this.id)
       .then(response => {
         this.brewerys = response.data;
@@ -86,5 +86,17 @@ button {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
   cursor: pointer;
   font-family: "Roboto Mono", monospace, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  #details-page {
+    display: inline-block;
+  }
+
+  #arizona,
+  #alabama,
+  #alaska {
+    margin: 100px 0;
+  }
 }
 </style>
