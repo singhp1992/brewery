@@ -9,17 +9,17 @@
         <div class="back-button">
             <button @click="$router.go(-1)">Back</button>
         </div>
-        <Reco v-if="brewerys.state === 'Arizona'"/>
+        <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import Reco from "./Reco.vue";
+import ArizonaReco from "./ArizonaReco.vue";
 
 export default {
   components: {
-    Reco
+    ArizonaReco
   },
   data() {
     return {

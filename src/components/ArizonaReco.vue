@@ -21,10 +21,9 @@ export default {
     axios
       .get("https://api.openbrewerydb.org/breweries?by_state=arizona")
       .then(response => {
-        console.log(response.data)
         this.arizona = response.data;
       });
-  },
+  }
 };
 </script>
 
