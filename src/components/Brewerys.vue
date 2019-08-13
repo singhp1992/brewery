@@ -47,4 +47,10 @@ a {
 a:hover {
   color: darkgrey;
 }
+
+@media (max-width: 1024px) {
+  .brewery-list {
+    display: inline;
+  }
+}
 </style>
