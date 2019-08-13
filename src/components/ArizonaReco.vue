@@ -1,9 +1,21 @@
 <template>
     <div id="arizona"> 
         <h3 class="transform">Recommended Breweries in Arizona</h3>
-        <p class="transform">{{ arizona[15].name }}</p>
-        <p class="transform">{{ arizona[16].name }}</p>
-        <p class="transform">{{ arizona[17].name }}</p>
+        <div> 
+          <h4 class="transform">1. {{ arizona[14].name }}</h4>
+          <p class="transform">{{ arizona[14].street }}</p>
+          <p>{{ arizona[14].website_url }}</p>
+        </div>
+        <div> 
+          <h4 class="transform">2. {{ arizona[16].name }}</h4>
+          <p class="transform">{{ arizona[16].street }}</p>
+          <p>{{ arizona[16].website_url }}</p>
+        </div>
+        <div> 
+          <h4 class="transform">3. {{ arizona[17].name }}</h4>
+          <p class="transform">{{ arizona[17].street }}</p>
+          <p>{{ arizona[17].website_url }}</p>
+        </div>
     </div>
 </template>
 
