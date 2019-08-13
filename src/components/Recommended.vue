@@ -2,6 +2,8 @@
     <div id="recommended-page"> 
         <h1 class="transform">Recommended Breweries</h1>
         <p class="transform">{{ reco1.name }}</p>
+        <p class="transform">{{ reco1.street }} </p>
+        <p class="transform">{{ reco1.state }} </p>
     </div>
 </template>
 
