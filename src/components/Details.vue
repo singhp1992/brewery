@@ -38,6 +38,7 @@ export default {
   },
   mounted() {
     axios
+    // fetching api data based on the id of the clicked brewery
       .get("https://api.openbrewerydb.org/breweries/" + this.id)
       .then(response => {
         this.brewerys = response.data;
