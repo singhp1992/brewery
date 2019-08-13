@@ -85,10 +85,8 @@ h2 {
 .organized {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: space-between;
   margin: 0 100px;
-  height: 350px;
 }
 
 .organized > div {
@@ -108,13 +106,25 @@ h2 {
   height: fit-content;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1186px) {
   .organized {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 350px;
+    width: 900px;
   }
 
   #brewpub {
     height: fit-content;
+  }
+}
+
+@media (max-width: 820px) {
+  .organized {
+    display: inline-block;
   }
 }
 </style>
