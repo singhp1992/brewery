@@ -1,11 +1,7 @@
 <template>
     <div id="recommended-page"> 
-        <h1 class="transform">{{ brewerys.name }}</h1>
-        <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
-        <p class="transform">Address: {{ brewerys.street }} </p>
-        <p> {{ brewerys.state }} </p>
-        <p>Contact: +1 {{ brewerys.phone }}</p>
-        <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
+        <h1 class="transform">Recommended Breweries</h1>
+        <p class="transform">{{ brewerys.name }}</p>
     </div>
 </template>
 
@@ -21,8 +17,9 @@ export default {
   },
   mounted() {
     axios
-      .get("https://api.openbrewerydb.org/breweries/" + this.id)
+      .get("https://api.openbrewerydb.org/breweries/" + this.id+1)
       .then(response => {
+        console.log(response.data)
         this.brewerys = response.data;
       });
   }
