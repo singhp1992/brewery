@@ -34,6 +34,7 @@ export default {
   margin-right: 120px;
   justify-content: space-around;
   margin-left: 120px;
+  font-size: large;
 }
 
 h4 {
