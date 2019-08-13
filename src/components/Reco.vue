@@ -1,9 +1,9 @@
 <template>
     <div id="recommended-page"> 
         <h1 class="transform">Recommended Breweries</h1>
-        <p class="transform">{{ arizona[0].name }}</p>
-        <p class="transform">{{ arizona[1].name }}</p>
-        <p class="transform">{{ arizona[2].name }}</p>
+        <p class="transform">{{ arizona[15].name }}</p>
+        <p class="transform">{{ arizona[16].name }}</p>
+        <p class="transform">{{ arizona[17].name }}</p>
     </div>
 </template>
 
