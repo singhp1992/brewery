@@ -1,5 +1,5 @@
 <template>
-    <div id="details-page"> 
+    <div id="recommended-page"> 
         <h1 class="transform">{{ brewerys.name }}</h1>
         <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
         <p class="transform">Address: {{ brewerys.street }} </p>
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-#details-page {
+#recommended-page {
   margin-top: 200px;
 }
 
@@ -44,21 +44,5 @@ export default {
 
 .details-p:visited {
   color: black;
-}
-
-.back-button {
-  text-align: center;
-  margin-top: 50px;
-}
-
-button {
-  background-color: #0e0e0e;
-  color: white;
-  width: 200px;
-  height: 50px;
-  font-size: 16px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
-  cursor: pointer;
-  font-family: "Roboto Mono", monospace, sans-serif;
 }
 </style>
