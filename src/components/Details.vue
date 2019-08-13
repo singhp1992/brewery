@@ -13,16 +13,19 @@
         </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
         <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
+        <AlabamaReco v-if="brewerys.state === 'Alabama'"/>
     </div>
 </template>
 
 <script>
 import axios from "axios";
 import ArizonaReco from "./ArizonaReco.vue";
+import AlabamaReco from "./AlabamaReco.vue";
 
 export default {
   components: {
-    ArizonaReco
+    ArizonaReco,
+    AlabamaReco,
   },
   data() {
     return {
@@ -42,12 +45,13 @@ export default {
 
 <style>
 #details-page {
-  margin-top: 200px;
+  margin-top: 150px;
   display: inline-flex;
 }
 
 #deets,
-#arizona {
+#arizona,
+#alabama {
   margin: 0 75px;
 }
 

@@ -1,9 +1,12 @@
 <template>
-    <div id="recommended-page"> 
-        <h1 class="transform">Recommended Breweries</h1>
-        <p class="transform">{{ alabama[15].name }}</p>
-        <p class="transform">{{ alabama[16].name }}</p>
-        <p class="transform">{{ alabama[17].name }}</p>
+    <div id="alabama"> 
+        <h3 class="transform">Recommended Breweries in Alabama</h3>
+        <!-- only looping through the last three items to avoid repetition -->
+        <ul :key="item.id"  v-for="item in alabama.slice(7)"> 
+          <h4 class="transform">{{ item.name }}</h4>
+          <p class="transform">{{ item.street }}</p>
+          <p><a class="details-p" v-bind:href="item.website_url" target="_blank">{{ item.website_url }}</a></p>
+        </ul>
     </div>
 </template>
 
@@ -19,7 +22,10 @@ export default {
   },
   mounted() {
     axios
-      .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
+      // recommended breweries are based off the state - only fetching other alabama api results
+      .get(
+        "https://api.openbrewerydb.org/breweries?by_state=alabama&page=1&per_page=10"
+      )
       .then(response => {
         this.alabama = response.data;
       });
@@ -28,10 +34,6 @@ export default {
 </script>
 
 <style>
-#recommended-page {
-  margin-bottom: 200px;
-}
-
 .transform {
   text-transform: capitalize;
 }
@@ -42,5 +44,9 @@ export default {
 
 .details-p:visited {
   color: black;
+}
+
+ul {
+  padding-left: 0;
 }
 </style>
