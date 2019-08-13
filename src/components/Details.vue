@@ -9,6 +9,7 @@
         <div class="back-button">
             <button @click="$router.go(-1)">Back</button>
         </div>
+        <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
         <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
     </div>
 </template>

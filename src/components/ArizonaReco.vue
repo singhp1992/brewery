@@ -19,6 +19,7 @@ export default {
   },
   mounted() {
     axios
+    // recommended breweries are based off the state - only fetching other arizona api results
       .get("https://api.openbrewerydb.org/breweries?by_state=arizona")
       .then(response => {
         this.arizona = response.data;
