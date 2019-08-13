@@ -40,7 +40,7 @@ export default {
   computed: {
     uniqueItemsList: function() {
       const states = [];
-      this.brewerys.forEach(item => {
+      this.brewerys.map(item => {
         if (!states.includes(item.state)) {
           states.push(item.state);
         }
