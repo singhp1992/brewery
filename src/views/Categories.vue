@@ -35,6 +35,8 @@ export default {
         this.brewerys = response.data;
       });
   },
+  // changed all the foreach functions to map
+  // each list function creates an array of brewerys based on their type
   computed: {
     microList: function() {
       const micro = [];
