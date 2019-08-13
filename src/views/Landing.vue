@@ -43,10 +43,6 @@ export default {
   text-shadow: rgb(241, 217, 119) 1px 0 15px;
 }
 
-/* .margin {
-    margin-top: 350px;
-} */
-
 .fade-button {
   margin-top: 350px;
   font-size: 25px;
