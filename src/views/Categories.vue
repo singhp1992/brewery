@@ -84,6 +84,8 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .organized > div {
