@@ -1,7 +1,7 @@
 <template>
     <div id="recommended-page"> 
         <h1 class="transform">Recommended Breweries</h1>
-        <p class="transform">{{ brewerys.name }}</p>
+        <p class="transform">{{ reco1.name }}</p>
     </div>
 </template>
 
@@ -12,15 +12,16 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      brewerys: []
+      reco1: []
     };
   },
   mounted() {
     axios
-      .get("https://api.openbrewerydb.org/breweries/" + this.id+1)
+      .get("https://api.openbrewerydb.org/breweries/" + this.id*1+1)
       .then(response => {
-        console.log(response.data)
-        this.brewerys = response.data;
+        console.log(response.data);
+        console.log(this.id*1+1)
+        this.reco1 = response.data;
       });
   }
 };
@@ -28,7 +29,7 @@ export default {
 
 <style>
 #recommended-page {
-  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .transform {
