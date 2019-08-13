@@ -9,17 +9,17 @@
         <div class="back-button">
             <button @click="$router.go(-1)">Back</button>
         </div>
-        <Recommended />
+        <Reco />
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import Recommended from "./Recommended.vue";
+import Reco from "./Reco.vue";
 
 export default {
   components: {
-    Recommended
+    Reco
   },
   data() {
     return {

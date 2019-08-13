@@ -19,12 +19,10 @@ export default {
   },
   mounted() {
     axios
-    // adding 1 to the id for recommended breweries - indicates breweries that are 
-    // close by to each other given that the api results are organized by location
-      .get("https://api.openbrewerydb.org/breweries/" + this.id*1+1)
+      // adding 1 to the id for recommended breweries - indicates breweries that are
+      // close by to each other given that the api results are organized by location
+      .get("https://api.openbrewerydb.org/breweries/" + this.id * 1 + 1)
       .then(response => {
-        console.log(response.data);
-        console.log(this.id*1+1)
         this.reco1 = response.data;
       });
   }
