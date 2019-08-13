@@ -4,7 +4,7 @@
         <div> 
           <h4 class="transform">1. {{ arizona[14].name }}</h4>
           <p class="transform">{{ arizona[14].street }}</p>
-          <p>{{ arizona[14].website_url }}</p>
+          <p><a class="details-p" v-bind:href="arizona[14].website_url" target="_blank">{{ arizona[14].website_url }}</a></p>
         </div>
         <div> 
           <h4 class="transform">2. {{ arizona[16].name }}</h4>
