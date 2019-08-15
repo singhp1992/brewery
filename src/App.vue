@@ -33,3 +33,4 @@ export default {
 // improve design
 // get rid of blank space - look into modern websites for inspo
 // add mobile mediaqueries
+//  This time there are invalid html tags within the ul tag - look into this on dom
