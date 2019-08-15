@@ -1,7 +1,8 @@
 <template>
   <div id="micro">
     <ul class="micro-list"> 
-        <h2>Micro</h2>
+      <!-- Changed Micro to an li element -->
+        <li>Micro</li>
         <li v-bind:key="item.id" 
         v-for="item in microList" > 
             <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
