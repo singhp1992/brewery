@@ -1,7 +1,8 @@
 <template>
   <div id="brewpub">
     <ul class="brewpub-list"> 
-        <h2>Brewpub</h2>
+      <!-- changed Brewpub to be an li element instead of h2 -->
+        <li>Brewpub</li>
         <li v-bind:key="item.id" v-for="item in brewpubList"> 
             <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
         </li>
