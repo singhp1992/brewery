@@ -3,7 +3,7 @@
         <h3 class="transform">Recommended Breweries in Arizona</h3>
         <!-- only looping through the last three items to avoid repetition -->
         <ul :key="item.id"  v-for="item in arizona.slice(7)"> 
-          <!-- replaced p elements with li elements -->
+          <!-- replaced p & h4 elements with li elements -->
           <li class="transform">{{ item.name }}</li>
           <li class="transform">{{ item.street }}, {{ item.city }}</li>
           <li><a class="details-p" v-bind:href="item.website_url" target="_blank">{{ item.website_url }}</a></li>
