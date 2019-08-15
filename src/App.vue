@@ -28,3 +28,6 @@ export default {
   color: black;
 }
 </style>
+
+
+// improve design
