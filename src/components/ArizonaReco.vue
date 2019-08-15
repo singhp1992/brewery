@@ -4,7 +4,7 @@
         <!-- only looping through the last three items to avoid repetition -->
         <ul :key="item.id"  v-for="item in arizona.slice(7)"> 
           <!-- replaced p elements with li elements -->
-          <h4 class="transform">{{ item.name }}</h4>
+          <li class="transform">{{ item.name }}</li>
           <li class="transform">{{ item.street }}, {{ item.city }}</li>
           <li><a class="details-p" v-bind:href="item.website_url" target="_blank">{{ item.website_url }}</a></li>
         </ul>
