@@ -31,3 +31,4 @@ export default {
 
 
 // improve design
+// get rid of blank space - look into modern websites for inspo
