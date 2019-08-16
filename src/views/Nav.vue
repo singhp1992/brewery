@@ -43,4 +43,10 @@ a:visited {
 #nav a.router-link-exact-active {
   color: goldenrod;
 }
+
+@media (min-width: 320px) {
+  #nav {
+    background-color: cornflowerblue;
+  }
+}
 </style>
