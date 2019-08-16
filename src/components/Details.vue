@@ -14,7 +14,7 @@
         </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
         <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
-        <AlabamaReco :alabamaList="alabamaList"  v-if="brewerys.state === 'Alabama'"/>
+        <AlabamaReco :alabamaList="alabamaList" v-if="brewerys.state === 'Alabama'"/>
         <AlaskaReco v-if="brewerys.state === 'Alaska'"/>
     </div>
 </template>
@@ -69,8 +69,7 @@ export default {
         }
       });
       return newList;
-    },
-    randomAlabama: function() {}
+    }
   }
 };
 </script>
