@@ -2,7 +2,7 @@
     <div id="alabama"> 
         <h3 class="transform">Recommended Breweries in Alabama</h3>
         <!-- only looping through the last three items to avoid repetition -->
-        <ul :key="item"  v-for="item in alabamaList">
+        <ul v-for="item in alabamaList" :key="item.id" >
          <!-- replaced p & h4 elements with li elements -->
           <li class="transform">{{ item.name }}</li>
           <li class="transform">{{ item.street }}, {{ item.city }}</li>
@@ -12,15 +12,13 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   props: ["alabamaList"],
-  data() {
-    return {
-      id: this.$route.params.id
-    };
-  }
+  // data() {
+  //   return {
+  //     id: this.$route.params.id
+  //   };
+  // }
 };
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
-        <router-link to="/">Welcome</router-link> |
-        <router-link to="/home">All Breweries</router-link> |
-        <router-link to="/categories">Categories</router-link> | 
-        <router-link to="/random">Random</router-link>
+        <router-link to="/">Welcome</router-link>  
+        <router-link to="/home">All Breweries</router-link>  
+        <router-link to="/categories">Categories</router-link>  
+        <router-link to="/random">Random</router-link>  
   </div>
 </template>
 
@@ -34,6 +34,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: white;
+  padding: 0 10px;
 }
 
 a:visited {
@@ -42,5 +43,22 @@ a:visited {
 
 #nav a.router-link-exact-active {
   color: goldenrod;
+}
+
+@media screen and (max-width: 414px) and (min-width: 319px) {
+  /* need to be more precise with nav bar */
+  /* WHY IS CATEGORIES DISAPPEARING ONLY ON MEDIAQUERY */
+
+  #nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+  }
+
+  a {
+    padding: 10px;
+  }
 }
 </style>
