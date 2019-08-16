@@ -45,6 +45,7 @@ export default {
         this.brewerys = response.data;
       });
     axios
+      // fetching all brewerys in alabama for recommendations 
       .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
       .then(response => {
         console.log(response.data);
