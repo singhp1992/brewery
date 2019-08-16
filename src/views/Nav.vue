@@ -45,33 +45,7 @@ a:visited {
   color: goldenrod;
 }
 
-@media (max-width: 320px) {
-  #nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100px;
-  }
-
-  a {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 375px) {
-  #nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100px;
-  }
-
-  a {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 414px) {
+@media screen and (max-width: 414px) and (min-width: 319px) {
   #nav {
     display: flex;
     justify-content: center;
