@@ -26,6 +26,7 @@ import AlabamaReco from "./AlabamaReco.vue";
 import AlaskaReco from "./AlaskaReco.vue";
 
 export default {
+  name: "Details",
   components: {
     ArizonaReco,
     AlabamaReco,
@@ -56,14 +57,15 @@ export default {
   // add computed parts here - from categories view
   // pass through function as props to alabama reco
   computed: {
-    microList: function() {
-      const micro = [];
-      this.brewerys.map(item => {
-        if (item.brewery_type === "micro") {
-          micro.push(item);
+    alabamaList: function() {
+      const newList = [];
+      this.alabama.map(item => {
+        if (item.state === "Alabama") {
+          newList.push(item);
+          console.log(newList)
         }
       });
-      return micro;
+      return newList;
     }
   }
 };
