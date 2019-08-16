@@ -69,11 +69,12 @@ export default {
           newList.push(item);
         }
       });
+      // getting three random objects from the array
       const recoOne = newList[Math.floor(Math.random() * newList.length)];
       const recoTwo = newList[Math.floor(Math.random() * newList.length)];
       const recoThree = newList[Math.floor(Math.random() * newList.length)];
       const threeRecos = [];
-
+      // pushing the three objects into a new array to be passed down as props in alabamaReco component
       threeRecos.push(recoOne, recoTwo, recoThree);
 
       return threeRecos;
