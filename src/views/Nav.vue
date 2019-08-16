@@ -1,8 +1,8 @@
 <template>
   <div id="nav">
-        <router-link to="/">Welcome</router-link> |
-        <router-link to="/home">All Breweries</router-link> |
-        <router-link to="/categories">Categories</router-link> | 
+        <router-link to="/">Welcome</router-link>
+        <router-link to="/home">All Breweries</router-link>
+        <router-link to="/categories">Categories</router-link>
         <router-link to="/random">Random</router-link>
   </div>
 </template>
@@ -44,9 +44,16 @@ a:visited {
   color: goldenrod;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   #nav {
-    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  a {
+    padding: 10px;
   }
 }
 </style>
