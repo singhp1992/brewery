@@ -59,7 +59,7 @@ export default {
     alabamaList: function() {
       const newList = [];
       this.alabama.map(item => {
-        if (item.name === "Avondale Brewing Co") {
+        if (item.state === "Alabama") {
           newList.push(item);
           console.log(newList)
         }
