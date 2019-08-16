@@ -13,8 +13,8 @@
                 </div>
         </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
-        <ArizonaReco :alabamaList="alabamaList" v-if="brewerys.state === 'Arizona'"/>
-        <AlabamaReco v-if="brewerys.state === 'Alabama'"/>
+        <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
+        <AlabamaReco :alabamaList="alabamaList"  v-if="brewerys.state === 'Alabama'"/>
         <AlaskaReco v-if="brewerys.state === 'Alaska'"/>
     </div>
 </template>
@@ -50,7 +50,6 @@ export default {
       // fetching all brewerys in alabama for recommendations
       .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
       .then(response => {
-        console.log(response.data);
         this.alabama = response.data;
       });
   },
@@ -60,7 +59,7 @@ export default {
     alabamaList: function() {
       const newList = [];
       this.alabama.map(item => {
-        if (item.state === "Alabama") {
+        if (item.name === "Avondale Brewing Co") {
           newList.push(item);
           console.log(newList)
         }
