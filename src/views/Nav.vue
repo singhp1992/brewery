@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
-        <router-link to="/">Welcome</router-link>
-        <router-link to="/home">All Breweries</router-link>
-        <router-link to="/categories">Categories</router-link>
-        <router-link to="/random">Random</router-link>
+        <router-link to="/">Welcome</router-link>  
+        <router-link to="/home">All Breweries</router-link>  
+        <router-link to="/categories">Categories</router-link>  
+        <router-link to="/random">Random</router-link>  
   </div>
 </template>
 
@@ -34,6 +34,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: white;
+  padding: 0 10px;
 }
 
 a:visited {
