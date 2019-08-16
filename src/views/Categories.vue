@@ -43,7 +43,6 @@ export default {
       this.brewerys.map(item => {
         if (item.brewery_type === "micro") {
           micro.push(item);
-          console.log(micro)
         }
       });
       return micro;
