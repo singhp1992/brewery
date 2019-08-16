@@ -56,4 +56,30 @@ a:visited {
     padding: 10px;
   }
 }
+
+@media (max-width: 375px) {
+  #nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  a {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  #nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  a {
+    padding: 10px;
+  }
+}
 </style>
