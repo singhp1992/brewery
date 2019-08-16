@@ -42,7 +42,7 @@ a:visited {
 }
 
 #nav a.router-link-exact-active {
-  color: goldenrod;
+  color: purple;
 }
 
 @media screen and (max-width: 414px) and (min-width: 319px) {

@@ -113,8 +113,9 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    height: 350px;
-    width: 900px;
+    /* the below two are messing up with the nav bar css */
+    /* height: 350px; */
+    /* width: 900px; */
   }
 
   #brewpub {
@@ -122,9 +123,10 @@ h2 {
   }
 }
 
-@media (max-width: 820px) {
+
+/* @media (max-width: 820px) {
   .organized {
     display: inline-block;
   }
-}
+} */
 </style>
