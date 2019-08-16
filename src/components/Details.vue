@@ -14,7 +14,8 @@
         </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
         <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
-        <AlabamaReco v-if="brewerys.state === 'Alabama'"/>
+        <AlabamaReco :alabamaList="alabamaList"
+         v-if="brewerys.state === 'Alabama'"/>
         <AlaskaReco v-if="brewerys.state === 'Alaska'"/>
     </div>
 </template>
@@ -26,6 +27,7 @@ import AlabamaReco from "./AlabamaReco.vue";
 import AlaskaReco from "./AlaskaReco.vue";
 
 export default {
+  name: "Details",
   components: {
     ArizonaReco,
     AlabamaReco,
@@ -34,7 +36,8 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      brewerys: []
+      brewerys: [],
+      alabama: []
     };
   },
   mounted() {
@@ -44,6 +47,39 @@ export default {
       .then(response => {
         this.brewerys = response.data;
       });
+    axios
+      // fetching all brewerys in alabama for recommendations
+      .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
+      .then(response => {
+        this.alabama = response.data;
+      });
+  },
+  // add computed parts here - from categories view
+  // pass through function as props to alabama reco
+  computed: {
+    alabamaList: function() {
+      const newList = [];
+      this.alabama.map(item => {
+        if (
+          item.name !== "Avondale Brewing Co" &&
+          item.name !== "Band of Brothers Brewing Company" &&
+          item.name !== "Trim Tab Brewing" &&
+          item.name !== "Yellowhammer Brewery"
+        ) {
+          newList.push(item);
+        }
+      });
+      // getting three random objects from the array
+      const recoOne = newList[Math.floor(Math.random() * newList.length)];
+      const recoTwo = newList[Math.floor(Math.random() * newList.length)];
+      const recoThree = newList[Math.floor(Math.random() * newList.length)];
+      const threeRecos = [];
+      // pushing the three objects into a new array to be passed down as props in alabamaReco component
+      threeRecos.push(recoOne, recoTwo, recoThree);
+
+      return threeRecos;
+      // return newList;
+    }
   }
 };
 </script>
