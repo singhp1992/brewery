@@ -50,4 +50,8 @@ export default {
 ul {
   padding-left: 0;
 }
+
+li {
+  list-style-type: none;
+}
 </style>
