@@ -109,4 +109,11 @@ export default {
     margin-top: 150px;
   }
 }
+
+@media screen and (max-width: 414px) and (min-width: 319px) {
+  .fade-header {
+    width: 90%;
+    margin: 200px auto;
+  }
+}
 </style>
