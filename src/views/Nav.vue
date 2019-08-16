@@ -46,6 +46,7 @@ a:visited {
 }
 
 @media screen and (max-width: 414px) and (min-width: 319px) {
+  /* need to be more precise with nav bar */
   #nav {
     display: flex;
     justify-content: center;
