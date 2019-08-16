@@ -15,11 +15,11 @@
 import axios from "axios";
 
 export default {
+  props: ["alabamaList"],
   data() {
     return {
       id: this.$route.params.id,
       alabama: [],
-      bama: []
     };
   },
   mounted() {

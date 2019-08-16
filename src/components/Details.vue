@@ -44,6 +44,12 @@ export default {
       .then(response => {
         this.brewerys = response.data;
       });
+      // add alabama api call here 
+  }, 
+  // add computed parts here - from categories view
+  // pass through function as props to alabama reco
+  computed: {
+
   }
 };
 </script>
