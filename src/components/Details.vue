@@ -13,7 +13,7 @@
                 </div>
         </div> 
         <!-- recommendations will only appear based off the state of the brewery selected on the details page -->
-        <ArizonaReco v-if="brewerys.state === 'Arizona'"/>
+        <ArizonaReco :alabamaList="alabamaList" v-if="brewerys.state === 'Arizona'"/>
         <AlabamaReco v-if="brewerys.state === 'Alabama'"/>
         <AlaskaReco v-if="brewerys.state === 'Alaska'"/>
     </div>
@@ -44,13 +44,16 @@ export default {
       .then(response => {
         this.brewerys = response.data;
       });
-      // add alabama api call here 
-  }, 
+    axios
+      .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
+      .then(response => {
+        console.log(response.data);
+        this.alabama = response.data;
+      });
+  },
   // add computed parts here - from categories view
   // pass through function as props to alabama reco
-  computed: {
-
-  }
+  computed: {}
 };
 </script>
 

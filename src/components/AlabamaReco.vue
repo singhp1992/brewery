@@ -25,11 +25,7 @@ export default {
   mounted() {
     axios
       // recommended breweries are based off the state - only fetching other alabama api results
-      .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
-      .then(response => {
-        console.log(response.data)
-        this.alabama = response.data;
-      });
+  
   }
 };
 </script>
