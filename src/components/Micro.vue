@@ -2,7 +2,7 @@
   <div id="micro">
     <ul class="micro-list"> 
       <!-- Changed Micro to an li element -->
-        <li>Micro</li>
+        <li class="title">Micro</li>
         <li v-bind:key="item.id" 
         v-for="item in microList" > 
             <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
@@ -23,5 +23,11 @@ export default {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 </style>
