@@ -34,7 +34,8 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      brewerys: []
+      brewerys: [],
+      alabama: []
     };
   },
   mounted() {
@@ -45,7 +46,7 @@ export default {
         this.brewerys = response.data;
       });
     axios
-      // fetching all brewerys in alabama for recommendations 
+      // fetching all brewerys in alabama for recommendations
       .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
       .then(response => {
         console.log(response.data);
@@ -54,7 +55,17 @@ export default {
   },
   // add computed parts here - from categories view
   // pass through function as props to alabama reco
-  computed: {}
+  computed: {
+    microList: function() {
+      const micro = [];
+      this.brewerys.map(item => {
+        if (item.brewery_type === "micro") {
+          micro.push(item);
+        }
+      });
+      return micro;
+    }
+  }
 };
 </script>
 
