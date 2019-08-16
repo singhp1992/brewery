@@ -2,7 +2,7 @@
     <div id="alabama"> 
         <h3 class="transform">Recommended Breweries in Alabama</h3>
         <!-- only looping through the last three items to avoid repetition -->
-        <ul :key="item.id"  v-for="item in alabama.slice(7)">
+        <ul :key="item.id"  v-for="item in alabamaList.slice(7)">
           <!-- replaced p & h4 elements with li elements --> 
           <li class="transform">{{ item.name }}</li>
           <li class="transform">{{ item.street }}, {{ item.city }}</li>
@@ -19,13 +19,7 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      alabama: [],
     };
-  },
-  mounted() {
-    axios
-      // recommended breweries are based off the state - only fetching other alabama api results
-  
   }
 };
 </script>

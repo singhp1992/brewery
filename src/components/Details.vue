@@ -59,7 +59,10 @@ export default {
     alabamaList: function() {
       const newList = [];
       this.alabama.map(item => {
-        if (item.state === "Alabama") {
+        if (item.name !== "Avondale Brewing Co" && 
+        item.name !== "Band of Brothers Brewing Company" && 
+        item.name !== "Trim Tab Brewing" && 
+        item.name !== "Yellowhammer Brewery"  ) {
           newList.push(item);
           console.log(newList)
         }
