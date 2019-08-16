@@ -26,7 +26,7 @@ export default {
     };
   },
   methods: {
-    // filters through brewerys that match the corresponded selected state 
+    // filters through brewerys that match the corresponded selected state
     filterList: function() {
       this.state = event.target.value;
     }
@@ -58,6 +58,10 @@ export default {
 <style>
 #home {
   margin-top: 120px;
+}
+
+@media (min-width: 320px) {
+  background-color: cornflowerblue;
 }
 </style>
 
