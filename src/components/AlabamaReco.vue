@@ -18,16 +18,16 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
-      alabama: []
+      alabama: [],
+      bama: []
     };
   },
   mounted() {
     axios
       // recommended breweries are based off the state - only fetching other alabama api results
-      .get(
-        "https://api.openbrewerydb.org/breweries?by_state=alabama&page=1&per_page=10"
-      )
+      .get("https://api.openbrewerydb.org/breweries?by_state=alabama")
       .then(response => {
+        console.log(response.data)
         this.alabama = response.data;
       });
   }
