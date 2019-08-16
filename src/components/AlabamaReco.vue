@@ -2,7 +2,7 @@
     <div id="alabama"> 
         <h3 class="transform">Recommended Breweries in Alabama</h3>
         <!-- only looping through the last three items to avoid repetition -->
-        <ul :key="item.id"  v-for="item in alabamaList.slice(7)">
+        <ul :key="item.id"  v-for="item in alabamaList">
           <!-- replaced p & h4 elements with li elements --> 
           <li class="transform">{{ item.name }}</li>
           <li class="transform">{{ item.street }}, {{ item.city }}</li>
