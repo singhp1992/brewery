@@ -1,27 +1,16 @@
 <template>
     <div id="reco"> 
-      <h3 class="transform">Recommended Breweries</h3>
         <!-- replaced p & h4 elements with li elements -->
         <p class="transform">1. {{ reco1.name }}</p>
         <p> {{ reco1.street }}</p>
         <p> {{ reco1.city }}</p>
-
-        <!-- adding all the recommendations to this component so they will be in same div -->
-        <SecondReco />
-        <ThirdReco />
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import SecondReco from './SecondReco.vue';
-import ThirdReco from './ThirdReco.vue'
 
 export default {
-  components: {
-    SecondReco,
-    ThirdReco
-  },
   data() {
     return {
       id: this.$route.params.id,

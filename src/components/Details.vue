@@ -12,18 +12,18 @@
                     <button @click="$router.go(-1)">Back</button>
                 </div>
         </div> 
-        <FirstReco />
+        <AllRecos />
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import FirstReco from './FirstReco.vue';
+import AllRecos from './AllRecos.vue';
 
 export default {
   name: "Details",
   components: {
-    FirstReco,
+    AllRecos,
   },
   data() {
     return {
