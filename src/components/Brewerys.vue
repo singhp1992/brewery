@@ -4,7 +4,7 @@
             <li :key="brewery.id" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
-                <router-link v-bind:to="'/home/' + brewery.id">{{ brewery.name }}</router-link>
+                <router-link v-bind:to="'/home/' + brewery.id"><a>{{ brewery.name }}</a></router-link>
             </li>
         </ul>
     </div>
@@ -51,6 +51,10 @@ a:hover {
 @media screen and (max-width: 414px) and (min-width: 319px) {
   .brewery-list {
     display: inline;
+  }
+
+  li {
+    margin-top: 10px;
   }
 }
 </style>
