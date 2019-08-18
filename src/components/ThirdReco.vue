@@ -1,41 +1,30 @@
 <template>
     <div id="reco"> 
-      <h3 class="transform">Recommended Breweries</h3>
         <!-- replaced p & h4 elements with li elements -->
-        <p class="transform">1. {{ reco1.name }}</p>
-        <p> {{ reco1.street }}</p>
-        <p> {{ reco1.city }}</p>
-
-        <!-- adding all the recommendations to this component so they will be in same div -->
-        <SecondReco />
-        <ThirdReco />
+        <p class="transform">2. {{ reco3.name }}</p>
+        <p> {{ reco3.street }}</p>
+        <p> {{ reco3.city }}</p>
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import SecondReco from './SecondReco.vue';
-import ThirdReco from './ThirdReco.vue'
 
 export default {
-  components: {
-    SecondReco,
-    ThirdReco
-  },
   data() {
     return {
       id: this.$route.params.id,
-      reco1: []
+      reco3: []
     };
   },
   mounted() {
     axios
       // fetching recommended breweries based off of id number close to this.id
-      .get("https://api.openbrewerydb.org/breweries/" + (this.id * 1 + 1))
+      .get("https://api.openbrewerydb.org/breweries/" + (this.id * 1 + 3))
       .then(response => {
         console.log(this.id);
         console.log(response.data);
-        this.reco1 = response.data;
+        this.reco3 = response.data;
       });
   }
 };
