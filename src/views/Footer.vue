@@ -1,8 +1,8 @@
 <template>
     <div id="footer">
-      <router-link to="/home">Home</router-link>
-      <router-link to="/categories">Categories</router-link> 
-      <router-link to="/random">Random</router-link>
+      <router-link class="no-display" to="/home">Home</router-link>
+      <router-link class="no-display" to="/categories">Categories</router-link> 
+      <router-link class="no-display" to="/random">Random</router-link>
       <router-link to="/api" target="_blank">API Documentation</router-link> 
       <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
@@ -39,8 +39,17 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100px;
+    height: 75px;
     width: 100%;
+    padding-top: 0;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  #footer a {
+    padding: 5px;
   }
 }
 </style>
