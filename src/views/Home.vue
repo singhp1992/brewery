@@ -62,7 +62,7 @@ export default {
 
 @media (min-width: 320px) {
   #home {
-    background-color: cornflowerblue;
+    
   }
 }
 </style>
