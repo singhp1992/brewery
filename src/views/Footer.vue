@@ -44,6 +44,7 @@ export default {
     padding-top: 0;
   }
 
+  /* adding this class to links that repeat in the nav */
   .no-display {
     display: none;
   }
