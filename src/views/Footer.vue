@@ -33,4 +33,10 @@ export default {
 #footer a {
   color: goldenrod;
 }
+
+@media screen and (max-width: 414px) and (min-width: 319px) {
+  #footer {
+    display: none;
+  }
+}
 </style>
