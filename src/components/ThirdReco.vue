@@ -1,7 +1,7 @@
 <template>
     <div id="reco"> 
         <!-- replaced p & h4 elements with li elements -->
-        <p class="transform">2. {{ reco3.name }}</p>
+        <p class="transform">3. {{ reco3.name }}</p>
         <p> {{ reco3.street }}</p>
         <p> {{ reco3.city }}</p>
     </div>
