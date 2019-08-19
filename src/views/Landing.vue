@@ -20,9 +20,6 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.landing {
   display: grid;
   max-width: 100%;
   grid-template-columns: auto;
@@ -109,8 +106,6 @@ export default {
     opacity: 1;
   }
 }
-
-
 
 /* @media (max-width: 1024px) {
   .fade-header {
