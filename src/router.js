@@ -33,6 +33,7 @@ export default new Router({
     {
       path: '/github',
       beforeEnter() {
+        // directed towards my personal github
         location.href = 'https://github.com/singhp1992'
       }
     },
