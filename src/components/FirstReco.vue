@@ -20,6 +20,7 @@ export default {
   mounted() {
     axios
       // fetching recommended breweries based off of id number close to this.id
+      // api data is organized by state, therefore close id numbers = geographically close 
       .get("https://api.openbrewerydb.org/breweries/" + (this.id * 1 + 1))
       .then(response => {
         console.log(this.id);
