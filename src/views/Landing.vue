@@ -107,6 +107,8 @@ export default {
   }
 }
 
+
+/* MediaQueries */
 @media (max-width: 1024px) {
   .fade-header {
     margin-top: 150px;
