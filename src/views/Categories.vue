@@ -118,6 +118,11 @@ export default {
   color: black;
 }
 
+.organized a {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
 .item:hover {
   color: darkgray;
 }

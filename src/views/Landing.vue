@@ -32,7 +32,7 @@ export default {
 }
 
 .fade-header {
-  margin-top: 150px;
+  margin-top: 170px;
   font-size: 30px;
 
   -webkit-animation: fadein 5s;

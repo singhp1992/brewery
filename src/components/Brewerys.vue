@@ -45,6 +45,8 @@ h4 {
 }
 
 a {
+  padding-top: 50px;
+  padding-bottom: 75px;
   color: black;
 }
 
