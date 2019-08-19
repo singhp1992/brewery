@@ -40,24 +40,4 @@ export default {
 #footer a {
   color: goldenrod;
 }
-
-/* @media screen and (max-width: 414px) and (min-width: 319px) {
-  #footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 75px;
-    width: 100%;
-    padding-top: 0;
-  }
-
-  /* adding this class to links that repeat in the nav */
-/* .no-display {
-    display: none;
-  }
-
-  #footer a {
-    padding: 5px;
-  }
-} */
 </style>
