@@ -83,10 +83,7 @@ h2 {
 }
 
 .organized {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 100px;
+  width: 100%;
 }
 
 .organized > div {
@@ -98,28 +95,7 @@ h2 {
   margin-bottom: 100px;
 }
 
-#micro {
-  height: fit-content;
-}
-
 #brewpub {
   height: fit-content;
-}
-
-@media (max-width: 1186px) {
-  .organized {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    /* the below two are messing up with the nav bar css */
-    /* height: 350px; */
-    /* width: 900px; */
-  }
-
-  #brewpub {
-    height: fit-content;
-  }
 }
 </style>
