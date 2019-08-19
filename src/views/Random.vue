@@ -71,6 +71,7 @@ export default {
 }
 
 .name {
+  color: #3db63d;
   padding-top: 25px;
 }
 

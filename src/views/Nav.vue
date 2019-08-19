@@ -46,10 +46,6 @@ a {
   padding: 0 10px;
 }
 
-a:visited {
-  color: white;
-}
-
 a:hover,
 #nav a.router-link-exact-active {
   color: #E48252;

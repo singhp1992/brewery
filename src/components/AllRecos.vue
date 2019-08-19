@@ -37,7 +37,7 @@ export default {
 }
 
 .colored-reco {
-  color: #d2a8ad;
+  color: #5bc7c2;
 }
 
 ul {
