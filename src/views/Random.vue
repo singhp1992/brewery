@@ -6,7 +6,8 @@
       <p class="transform">Address: {{ info.street }} </p> 
       <p> {{ info.state }} </p>
       <p>Contact: +1 {{ info.phone }}</p>
-      <p class="web">Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
+      <p>Website:</p>
+      <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a>
       <div class="random-button">
         <button v-on:click="fetchAnother()">Another One!</button>
       </div>
@@ -73,10 +74,6 @@ export default {
 .name {
   color: #3db63d;
   padding-top: 25px;
-}
-
-.web {
-  padding: 10px;
 }
 
 .random-url {
