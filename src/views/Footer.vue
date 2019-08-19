@@ -25,7 +25,7 @@ export default {
   color: white;
   text-align: center;
   padding: 10px 0;
-  /* border-top: 2px solid black; */
+  border-top: 2px solid #d9d9d9;
   box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
 
 

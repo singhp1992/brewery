@@ -26,8 +26,9 @@ export default {
   width: 100%;
   background-color: black;
   color: white;
-  /* border-bottom: 2px solid black; */
+  border-bottom: 2px solid #d9d9d9;
   z-index: 10;
+  font-size: x-large;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 
   /* grid css layout */
@@ -49,11 +50,8 @@ a:visited {
   color: white;
 }
 
-a:hover {
-  color: #f19f4d;
-}
-
+a:hover,
 #nav a.router-link-exact-active {
-  color:rgb(83, 175, 91);
+  color: #E48252;
 }
 </style>
