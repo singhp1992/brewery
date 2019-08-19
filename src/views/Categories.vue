@@ -79,8 +79,8 @@ export default {
 }
 
 #categories {
-  height: 2200px;
-  margin-top: 130px;
+  height: fit-content;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 

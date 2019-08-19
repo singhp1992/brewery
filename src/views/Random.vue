@@ -56,7 +56,7 @@ export default {
 <style>
 #random {
   /* design css */
-  margin-top: 130px;
+  margin-top: 150px;
   height: 100%;
 
   /* grid css */

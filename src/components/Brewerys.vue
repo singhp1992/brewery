@@ -27,7 +27,7 @@ export default {
 .brewery-list {
   /* design css */
   list-style-type: none;
-  height: 2000px;
+  height: fit-content;
   margin: 0 120px;
   font-size: large;
 
@@ -63,6 +63,6 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
 </style>
