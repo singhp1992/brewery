@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
         <router-link to="/">Welcome</router-link>  
-        <router-link to="/home">All Breweries</router-link>  
+        <router-link to="/home">Breweries</router-link>  
         <router-link to="/categories">Categories</router-link>  
         <router-link to="/random">Random</router-link>  
   </div>
@@ -33,7 +33,7 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 20px;
   grid-column-gap: 20px;
 }
