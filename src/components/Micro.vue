@@ -28,7 +28,7 @@ export default {
 .micro-list {
   /* design css */
   list-style-type: none;
-  height: 1000px;
+  /* height: 1000px; */
   margin: 0 120px;
   font-size: large;
 

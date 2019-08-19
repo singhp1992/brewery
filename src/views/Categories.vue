@@ -1,6 +1,5 @@
 <template>
   <div id="categories">
-    <h1>Categories</h1>
     <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
@@ -70,10 +69,6 @@ export default {
 </script>
 
 <style>
-h2 {
-  text-decoration: underline;
-}
-
 .item {
   color: black;
 }
