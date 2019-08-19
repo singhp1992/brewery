@@ -16,6 +16,7 @@ export default {
 
 <style>
 #footer {
+  /* design css */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -24,17 +25,23 @@ export default {
   color: white;
   text-align: center;
   z-index: 10;
-  height: 5%;
+  padding-bottom: 10px;
   padding-top: 10px;
   border-top: 2px solid black;
   box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
 }
 
 #footer a {
   color: goldenrod;
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
+/* @media screen and (max-width: 414px) and (min-width: 319px) {
   #footer {
     display: flex;
     justify-content: center;
@@ -45,12 +52,12 @@ export default {
   }
 
   /* adding this class to links that repeat in the nav */
-  .no-display {
+/* .no-display {
     display: none;
   }
 
   #footer a {
     padding: 5px;
   }
-}
+} */
 </style>
