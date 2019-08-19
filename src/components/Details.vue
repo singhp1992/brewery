@@ -1,6 +1,6 @@
 <template>
     <div id="details-page">
-        <div id="deets">
+        <div id="deets" class="card">
             <h3 class="transform">{{ brewerys.name }}</h3>
             <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
             <p class="transform">Address: {{ brewerys.street }} </p>
@@ -44,7 +44,7 @@ export default {
 
 <style>
 #details-page {
-  margin-top: 150px;
+  margin-top: 130px;
   display: inline-flex;
 }
 
@@ -80,7 +80,20 @@ button {
   font-family: "Roboto Mono", monospace, sans-serif;
 }
 
-@media (max-width: 1024px) {
+/* card design  */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 400px;
+  padding-top: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* @media (max-width: 1024px) {
   #details-page {
     display: inline-block;
   }
@@ -90,5 +103,5 @@ button {
   #alaska {
     margin: 100px 0;
   }
-}
+} */
 </style>
