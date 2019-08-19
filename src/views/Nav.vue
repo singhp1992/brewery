@@ -33,12 +33,10 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: 20px;
   grid-column-gap: 20px;
 }
-
-/* make sure that the mobile screens dont cut out */
 
 a {
   font-weight: bold;
