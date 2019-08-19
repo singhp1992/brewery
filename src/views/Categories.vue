@@ -122,11 +122,4 @@ h2 {
     height: fit-content;
   }
 }
-
-
-/* @media (max-width: 820px) {
-  .organized {
-    display: inline-block;
-  }
-} */
 </style>
