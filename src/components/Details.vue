@@ -46,7 +46,7 @@ export default {
 #details-page {
   /* design css */
   margin-top: 130px;
-  height: 1200px;
+  height: 1000px;
 
   /* grid css */
   display: grid;
@@ -56,10 +56,6 @@ export default {
   grid-column-gap: 50px;
   justify-content: center;
 }
-
-/* #deets {
-  margin: 0 75px;
-} */
 
 .transform {
   text-transform: capitalize;
