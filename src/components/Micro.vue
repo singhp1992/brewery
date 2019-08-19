@@ -1,11 +1,12 @@
 <template>
   <div id="micro">
-    <ul class="micro-list"> 
+    <h3 class="title">Micro Brewery</h3>
+    <ul class="category-list"> 
       <!-- Changed Micro to an li element -->
-        <li class="title">Micro</li>
-        <li v-bind:key="item.id" 
+        <li class="category-card"
+        v-bind:key="item.id" 
         v-for="item in microList" > 
-            <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
+            <router-link v-bind:to="'/home/' + item.id"><a class="item">{{ item.name }}</a></router-link>
         </li>
     </ul>
   </div>
@@ -19,14 +20,5 @@ export default {
 </script>
 
 <style>
-.micro-list {
-  list-style-type: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: bold;
-}
+/* css in categories view */
 </style>

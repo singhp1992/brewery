@@ -1,7 +1,5 @@
 <template>
   <div id="categories">
-    <h1>Categories</h1>
-    <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
@@ -25,10 +23,12 @@ export default {
   },
   data() {
     return {
+      // empty array to push api data
       brewerys: []
     };
   },
   mounted() {
+    // fetching api data
     axios
       .get("https://api.openbrewerydb.org/breweries?page=1&per_page=10")
       .then(response => {
@@ -70,8 +70,46 @@ export default {
 </script>
 
 <style>
-h2 {
-  text-decoration: underline;
+.organized {
+  width: 100%;
+}
+
+.organized > div {
+  margin: 10px;
+}
+
+#categories {
+  height: fit-content;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* css used in Micro,Brewpub,Contract component */
+.category-list {
+  /* design css */
+  list-style-type: none;
+  margin: 0 120px;
+  font-size: large;
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+}
+
+.category-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .item {
@@ -80,46 +118,5 @@ h2 {
 
 .item:hover {
   color: darkgray;
-}
-
-.organized {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 100px;
-}
-
-.organized > div {
-  margin: 10px;
-}
-
-#categories {
-  margin-top: 130px;
-  margin-bottom: 100px;
-}
-
-#micro {
-  height: fit-content;
-}
-
-#brewpub {
-  height: fit-content;
-}
-
-@media (max-width: 1186px) {
-  .organized {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    /* the below two are messing up with the nav bar css */
-    /* height: 350px; */
-    /* width: 900px; */
-  }
-
-  #brewpub {
-    height: fit-content;
-  }
 }
 </style>

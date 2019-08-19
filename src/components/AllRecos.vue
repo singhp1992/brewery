@@ -1,5 +1,5 @@
 <template>
-    <div id="reco"> 
+    <div id="reco" class="details-card"> 
       <h3 class="transform">Recommended Breweries</h3>
         <!-- adding all the recommendations to this component so they will be in same div -->
         <FirstReco />
@@ -10,9 +10,9 @@
 
 <script>
 import axios from "axios";
-import FirstReco from './FirstReco.vue'
-import SecondReco from './SecondReco.vue';
-import ThirdReco from './ThirdReco.vue'
+import FirstReco from "./FirstReco.vue";
+import SecondReco from "./SecondReco.vue";
+import ThirdReco from "./ThirdReco.vue";
 
 export default {
   components: {

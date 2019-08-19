@@ -1,7 +1,8 @@
 <template>
     <div class="brewerys">
         <ul class="brewery-list">
-            <li :key="brewery.id" 
+            <li :key="brewery.id"
+            class="card" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
                 <router-link v-bind:to="'/home/' + brewery.id"><a>{{ brewery.name }}</a></router-link>
@@ -20,26 +21,22 @@ export default {
 <style scoped>
 .brewerys {
   text-align: center;
-  margin: 20px 0 100px 0;
+  margin: 50px 0 100px 0;
 }
 
 .brewery-list {
   /* design css */
   list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 350px;
+  height: fit-content;
   margin: 0 120px;
-  justify-content: space-around;
   font-size: large;
 
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-rows: repeat(10, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
   justify-content: center;
 }
 
@@ -55,13 +52,17 @@ a:hover {
   color: darkgrey;
 }
 
-/* @media screen and (max-width: 414px) and (min-width: 319px) {
-  .brewery-list {
-    display: inline;
-  }
+/* card design  */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 100px;
+  padding-top: 50px;
+  background-color: white;
+}
 
-  li {
-    margin-top: 20px;
-  }
-} */
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
 </style>
