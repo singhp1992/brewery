@@ -94,7 +94,7 @@ h2 {
 }
 
 #categories {
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 100px;
 }
 
