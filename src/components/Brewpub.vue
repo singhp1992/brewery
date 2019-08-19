@@ -20,5 +20,8 @@ export default {
 </script>
 
 <style>
+#brewpub {
+  padding-top: 25px;
+}
 /* css in categories view */
 </style>
