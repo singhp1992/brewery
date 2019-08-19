@@ -1,6 +1,6 @@
 <template>
   <div id="random">
-    <div class="random-info">
+    <div class="random-info card">
       <h1 class="transform">{{ info.name }}</h1>
       <p class="transform">Type: {{ info.brewery_type }}</p>
       <p class="transform">Address: {{ info.street }} </p> 
@@ -62,9 +62,7 @@ export default {
   /* grid css */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
-  grid-row-gap: 50px;
-  grid-column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
 }
 
@@ -94,6 +92,18 @@ button {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
   cursor: pointer;
   font-family: "Livvic", sans-serif;
+}
+
+/* card design  */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 400px;
+  height: 400px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
 
