@@ -33,9 +33,9 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 20px;
-  grid-column-gap: 20px;
+  grid-gap: 10px;
 }
 
 a {
