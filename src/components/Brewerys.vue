@@ -63,7 +63,6 @@ a:hover {
   padding-top: 50px;
   background-color: white;
   border-radius: 25px;
-  border: 2px solid #d9d9d9;
 }
 
 .card:hover {
@@ -72,11 +71,11 @@ a:hover {
 
 /* individually colored links */
 .brewery-list li:nth-child(1) a {
-  color: #F96714;
+  color: #f96714;
 }
 
 .brewery-list li:nth-child(2) a {
-  color: #C62168;
+  color: #c62168;
 }
 
 .brewery-list li:nth-child(3) a {
@@ -88,7 +87,7 @@ a:hover {
 }
 
 .brewery-list li:nth-child(5) a {
-  color: #006E6D;
+  color: #006e6d;
 }
 
 .brewery-list li:nth-child(6) a {

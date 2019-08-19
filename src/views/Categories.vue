@@ -74,6 +74,10 @@ export default {
   width: 100%;
 }
 
+.title {
+  color: white;
+}
+
 .organized > div {
   margin: 10px;
 }
@@ -125,5 +129,46 @@ export default {
 
 .item:hover {
   color: darkgray;
+}
+
+/* individually colored links */
+.category-list li:nth-child(1) a {
+  color: #F96714;
+}
+
+.category-list li:nth-child(2) a {
+  color: #C62168;
+}
+
+.category-list li:nth-child(3) a {
+  color: #1ac373;
+}
+
+.category-list li:nth-child(4) a {
+  color: #8699f6;
+}
+
+.category-list li:nth-child(5) a {
+  color: #006E6D;
+}
+
+.category-list li:nth-child(6) a {
+  color: #ad4d10;
+}
+
+.category-list li:nth-child(7) a {
+  color: #c64363;
+}
+
+.category-list li:nth-child(8) a {
+  color: #89b64d;
+}
+
+.category-list li:nth-child(9) a {
+  color: #2f20c5;
+}
+
+.category-list li:nth-child(10) a {
+  color: #b57cc7;
 }
 </style>
