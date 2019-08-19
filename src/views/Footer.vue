@@ -38,4 +38,8 @@ export default {
 #footer a {
   color: goldenrod;
 }
+
+#footer a:hover {
+  color: white;
+}
 </style>
