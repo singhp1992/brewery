@@ -112,7 +112,6 @@ export default {
   transition: 0.3s;
   width: 300px;
   height: 100px;
-  padding-top: 50px;
 }
 
 .card:hover {

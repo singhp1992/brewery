@@ -7,10 +7,10 @@
             <p> {{ brewerys.state }} </p>
             <p>Contact: +1 {{ brewerys.phone }}</p>
             <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
-                <div class="back-button">
-                    <!-- on click will go back to previous page (either home or categories page) -->
-                    <button @click="$router.go(-1)">Back</button>
-                </div>
+            <div class="back-button">
+                <!-- on click will go back to previous page (either home or categories page) -->
+                <button @click="$router.go(-1)">Back</button>
+            </div>
         </div> 
         <AllRecos />
     </div>
@@ -82,7 +82,7 @@ button {
   font-size: 16px;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  font-family: "Roboto Mono", monospace, sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 
 /* card design  */
@@ -93,7 +93,6 @@ button {
   height: 400px;
   padding-top: 50px;
   margin-bottom: 100px;
-
 }
 
 .card:hover {

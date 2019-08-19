@@ -1,15 +1,15 @@
 <template>
-  <div class="random">
-    <h1 class="transform">{{ info.name }}</h1>
+  <div id="random">
     <div class="random-info">
-        <p class="transform">Type: {{ info.brewery_type }}</p>
-        <p class="transform">Address: {{ info.street }} </p> 
-        <p> {{ info.state }} </p>
-        <p>Contact: +1 {{ info.phone }}</p>
-        <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
-    </div>
-    <div class="random-button">
+      <h1 class="transform">{{ info.name }}</h1>
+      <p class="transform">Type: {{ info.brewery_type }}</p>
+      <p class="transform">Address: {{ info.street }} </p> 
+      <p> {{ info.state }} </p>
+      <p>Contact: +1 {{ info.phone }}</p>
+      <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
+      <div class="random-button">
         <button v-on:click="fetchAnother()">Another One!</button>
+      </div>
     </div>
   </div>
 </template>
@@ -54,12 +54,18 @@ export default {
 </script>
 
 <style>
-.random {
-  margin-top: 200px;
-}
+#random {
+  /* design css */
+  margin-top: 130px;
+  height: 100%;
 
-.random-info {
-  margin-top: 20px;
+  /* grid css */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  justify-content: center;
 }
 
 .transform {
@@ -87,7 +93,7 @@ button {
   font-size: 16px;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  font-family: "Roboto Mono", monospace, sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 </style>
 
