@@ -49,6 +49,10 @@ a:visited {
   color: white;
 }
 
+a:hover {
+  color: goldenrod;
+}
+
 #nav a.router-link-exact-active {
   color: purple;
 }
