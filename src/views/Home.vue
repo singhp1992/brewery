@@ -1,8 +1,10 @@
 <template>
   <div id="home">
-    <h1> All Breweries </h1>
+    <h1>All Breweries</h1>
+    <!-- Sort filters through breweries based off of the state -->
     <Sort :filterList="filterList" 
     :uniqueItemsList="uniqueItemsList" />
+    <!-- Brewerys component fetches data -->
     <Brewerys :brewerys="brewerys"
     :state="state" />
   </div>
@@ -32,6 +34,7 @@ export default {
     }
   },
   mounted() {
+    // fetching 10 objects from api 
     axios
       .get("https://api.openbrewerydb.org/breweries?page=1&per_page=10")
       .then(response => {
@@ -58,13 +61,11 @@ export default {
 <style>
 #home {
   margin-top: 150px;
-  /* background-image: url("../assets/beer-color.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
+  margin-bottom: 150px;
+}
+
+h1 {
+  color: white;
 }
 </style>
 

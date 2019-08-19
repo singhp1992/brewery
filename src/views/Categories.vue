@@ -37,6 +37,7 @@ export default {
   },
   // Revision: changed all the foreach functions to map
   // each list function creates an array of brewerys based on their type
+  // This creates the categories page
   computed: {
     microList: function() {
       const micro = [];
@@ -74,6 +75,10 @@ export default {
   width: 100%;
 }
 
+.title {
+  color: white;
+}
+
 .organized > div {
   margin: 10px;
 }
@@ -84,7 +89,7 @@ export default {
   margin-bottom: 100px;
 }
 
-/* css used in Micro,Brewpub,Contract component */
+/* css used for Micro,Brewpub,Contract component */
 .category-list {
   /* design css */
   list-style-type: none;
@@ -106,17 +111,61 @@ export default {
   width: 300px;
   height: 100px;
   padding-top: 50px;
+  background-color: white;
+  border-radius: 25px;
 }
 
 .category-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 1px 0 #d9d9d9;
 }
 
 .item {
-  color: black;
+  font-size: 20px;
 }
 
-.item:hover {
-  color: darkgray;
+.organized a {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+/* individually colored links */
+.category-list li:nth-child(1) a {
+  color: #f96714;
+}
+
+.category-list li:nth-child(2) a {
+  color: #c62168;
+}
+
+.category-list li:nth-child(3) a {
+  color: #1ac373;
+}
+
+.category-list li:nth-child(4) a {
+  color: #8699f6;
+}
+
+.category-list li:nth-child(5) a {
+  color: #006e6d;
+}
+
+.category-list li:nth-child(6) a {
+  color: #ad4d10;
+}
+
+.category-list li:nth-child(7) a {
+  color: #ffbb00;
+}
+
+.category-list li:nth-child(8) a {
+  color: #89b64d;
+}
+
+.brewpub li:nth-child(1) a {
+  color: #2f20c5;
+}
+
+.contract li:nth-child(1) a {
+  color: #b57cc7;
 }
 </style>

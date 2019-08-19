@@ -1,6 +1,6 @@
 <template>
     <div id="reco" class="details-card"> 
-      <h3 class="transform">Recommended Breweries</h3>
+      <h3 class="transform colored-reco">Recommended Breweries</h3>
         <!-- adding all the recommendations to this component so they will be in same div -->
         <FirstReco />
         <SecondReco />
@@ -34,6 +34,10 @@ export default {
 
 .details-p:visited {
   color: black;
+}
+
+.colored-reco {
+  color: #5bc7c2;
 }
 
 ul {

@@ -1,7 +1,7 @@
 <template>
   <div id="contract">
-    <h3 class="title">Contract Brewery</h3>
-    <ul class="category-list"> 
+    <h1 class="title">Contract Brewery</h1>
+    <ul class="category-list contract"> 
       <!-- Changed Contract to be an li element -->
         <li class="category-card" 
         v-bind:key="item.id" 
@@ -23,5 +23,5 @@ export default {
 #contract {
   padding-top: 25px;
 }
-/* css in categories view */
+/* css in Categories.vue */
 </style>

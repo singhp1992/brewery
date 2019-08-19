@@ -32,7 +32,7 @@ export default {
 }
 
 .fade-header {
-  margin-top: 220px;
+  margin-top: 170px;
   font-size: 30px;
 
   -webkit-animation: fadein 5s;
@@ -107,6 +107,8 @@ export default {
   }
 }
 
+
+/* MediaQueries */
 @media (max-width: 1024px) {
   .fade-header {
     margin-top: 150px;
@@ -114,6 +116,7 @@ export default {
 }
 
 @media screen and (max-width: 600px) and (min-width: 300px) {
+  /* shifting header when screen is smaller */
   .fade-header {
     width: 90%;
     margin: 170px auto;

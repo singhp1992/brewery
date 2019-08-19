@@ -33,12 +33,14 @@ export default new Router({
     {
       path: '/github',
       beforeEnter() {
+        // directed towards my personal github
         location.href = 'https://github.com/singhp1992'
       }
     },
     {
       path: '/api',
       beforeEnter() {
+        // directed towards api documentation
         location.href = 'https://www.openbrewerydb.org/#documentation'
       }
     },

@@ -6,7 +6,7 @@
       <p class="transform">Address: {{ info.street }} </p> 
       <p> {{ info.state }} </p>
       <p>Contact: +1 {{ info.phone }}</p>
-      <p>Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
+      <p class="web">Website: <a class="random-url" v-bind:href="info.website_url" target="_blank">{{ info.website_url }}</a></p>
       <div class="random-button">
         <button v-on:click="fetchAnother()">Another One!</button>
       </div>
@@ -57,12 +57,12 @@ export default {
 #random {
   /* design css */
   margin-top: 150px;
-  height: 100%;
+  height: 500px;;
 
   /* grid css */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
 }
 
@@ -71,11 +71,17 @@ export default {
 }
 
 .name {
+  color: #3db63d;
   padding-top: 25px;
+}
+
+.web {
+  padding: 10px;
 }
 
 .random-url {
   color: blue;
+  font-size: 12px;
 }
 
 .random-url:visited {
@@ -84,7 +90,7 @@ export default {
 
 .random-button {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 button {
@@ -102,12 +108,10 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 400px;
+  width: 300px;
   height: 400px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 25px;
 }
 </style>
 

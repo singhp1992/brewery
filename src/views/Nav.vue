@@ -26,9 +26,10 @@ export default {
   width: 100%;
   background-color: black;
   color: white;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #d9d9d9;
   z-index: 10;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  font-size: x-large;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 
   /* grid css layout */
   display: grid;
@@ -45,15 +46,8 @@ a {
   padding: 0 10px;
 }
 
-a:visited {
-  color: white;
-}
-
-a:hover {
-  color: goldenrod;
-}
-
+a:hover,
 #nav a.router-link-exact-active {
-  color: purple;
+  color: #E48252;
 }
 </style>

@@ -1,17 +1,18 @@
 <template>
     <div id="details-page">
         <div id="deets" class="details-card">
-            <h3 class="transform">{{ brewerys.name }}</h3>
+            <h3 class="transform colored-header">{{ brewerys.name }}</h3>
             <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
             <p class="transform">Address: {{ brewerys.street }} </p>
             <p> {{ brewerys.state }} </p>
             <p>Contact: +1 {{ brewerys.phone }}</p>
-            <p>Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
+            <p class="web">Website: <a class="details-p" v-bind:href="brewerys.website_url" target="_blank">{{ brewerys.website_url }}</a></p>
             <div class="back-button">
                 <!-- on click will go back to previous page (either home or categories page) -->
                 <button @click="$router.go(-1)">Back</button>
             </div>
-        </div> 
+        </div>
+         <!--AllRecos will appear on their own card  -->
         <AllRecos />
     </div>
 </template>
@@ -28,6 +29,7 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
+      // empty array to push api data
       brewerys: []
     };
   },
@@ -55,6 +57,10 @@ export default {
   grid-row-gap: 50px;
   grid-column-gap: 50px;
   justify-content: center;
+}
+
+.colored-header {
+  color: #a85ff1;
 }
 
 .transform {
@@ -93,9 +99,7 @@ button {
   height: 400px;
   padding-top: 50px;
   margin-bottom: 100px;
-}
-
-.details-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 25px;
 }
 </style>

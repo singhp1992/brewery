@@ -12,6 +12,7 @@
 <script>
 export default {
   name: "Sort",
+  // props are passed from Home.vue   
   props: ["uniqueItemsList", "filterList"]
 };
 </script>
@@ -20,6 +21,10 @@ export default {
 select,
 option {
   font-family: "Livvic", sans-serif;
+}
+
+label {
+  color: white;
 }
 
 .sort {

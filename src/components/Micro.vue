@@ -1,6 +1,6 @@
 <template>
   <div id="micro">
-    <h3 class="title">Micro Brewery</h3>
+    <h1 class="title">Micro Brewery</h1>
     <ul class="category-list"> 
       <!-- Changed Micro to an li element -->
         <li class="category-card"
@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style>
-/* css in categories view */
+/* css in Categories.vue */
 </style>
