@@ -79,7 +79,7 @@ export default {
 }
 
 #categories {
-  height: 1100px;
+  height: 2200px;
   margin-top: 130px;
   margin-bottom: 100px;
 }
