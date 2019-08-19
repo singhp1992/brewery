@@ -20,5 +20,5 @@ export default {
 </script>
 
 <style>
-/* css in categories view */
+/* css in Categories.vue */
 </style>

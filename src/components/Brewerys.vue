@@ -1,6 +1,7 @@
 <template>
     <div class="brewerys">
         <ul class="brewery-list">
+          <!-- each brewery will have it's li element -->
             <li :key="brewery.id"
             class="card" 
             v-for="brewery in brewerys"

@@ -23,5 +23,5 @@ export default {
 #contract {
   padding-top: 25px;
 }
-/* css in categories view */
+/* css in Categories.vue */
 </style>
