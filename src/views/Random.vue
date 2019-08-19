@@ -1,7 +1,7 @@
 <template>
   <div id="random">
     <div class="random-info card">
-      <h1 class="transform">{{ info.name }}</h1>
+      <h3 class="transform name">{{ info.name }}</h3>
       <p class="transform">Type: {{ info.brewery_type }}</p>
       <p class="transform">Address: {{ info.street }} </p> 
       <p> {{ info.state }} </p>
@@ -68,10 +68,6 @@ export default {
 
 .transform {
   text-transform: capitalize;
-}
-
-h1 {
-  padding: 0 10px;
 }
 
 .random-url {
