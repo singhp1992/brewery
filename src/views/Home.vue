@@ -57,7 +57,7 @@ export default {
 
 <style>
 #home {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 </style>
 
