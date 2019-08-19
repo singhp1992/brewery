@@ -114,6 +114,7 @@ export default {
 }
 
 @media screen and (max-width: 600px) and (min-width: 300px) {
+  /* shifting header when screen is smaller */
   .fade-header {
     width: 90%;
     margin: 170px auto;
