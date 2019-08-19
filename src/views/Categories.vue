@@ -4,8 +4,8 @@
     <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
-      <Brewpub :brewpubList="brewpubList"/>
-      <Contract :contractList="contractList"/>
+      <!-- <Brewpub :brewpubList="brewpubList"/>
+      <Contract :contractList="contractList"/> -->
     </div>
   </div>
 </template>
