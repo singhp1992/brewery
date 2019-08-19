@@ -1,12 +1,12 @@
 <template>
   <div id="micro">
-     <h3 class="title">Micro</h3>
+    <h3 class="title">Micro</h3>
     <ul class="micro-list"> 
       <!-- Changed Micro to an li element -->
         <li class="card"
         v-bind:key="item.id" 
         v-for="item in microList" > 
-            <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
+            <router-link v-bind:to="'/home/' + item.id"><a class="item">{{ item.name }}</a></router-link>
         </li>
     </ul>
   </div>
@@ -20,23 +20,24 @@ export default {
 </script>
 
 <style>
+#micro {
+  text-align: center;
+  margin: 50px 0 100px 0;
+}
+
 .micro-list {
   /* design css */
   list-style-type: none;
-  padding-left: 0;
+  height: 1000px;
+  margin: 0 120px;
+  font-size: large;
 
-    /* grid css */
+  /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-template-columns: repeat(auto-fit, 300px);
   grid-column-gap: 50px;
-  grid-row-gap: 50px;
   justify-content: center;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: bold;
 }
 
 /* card design  */
@@ -44,7 +45,8 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 300px;
-  height: 200px;
+  height: 100px;
+  padding-top: 50px;
 }
 
 .card:hover {

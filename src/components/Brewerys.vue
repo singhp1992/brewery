@@ -34,9 +34,8 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  grid-column-gap: 100px;
-  grid-row-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-column-gap: 50px;
   justify-content: center;
 }
 
