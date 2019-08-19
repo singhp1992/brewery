@@ -28,6 +28,7 @@ export default {
   data() {
     return {
       id: this.$route.params.id,
+      // empty array to push api data
       brewerys: []
     };
   },
