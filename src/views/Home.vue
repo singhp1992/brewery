@@ -34,6 +34,7 @@ export default {
     }
   },
   mounted() {
+    // fetching 10 objects from api 
     axios
       .get("https://api.openbrewerydb.org/breweries?page=1&per_page=10")
       .then(response => {
