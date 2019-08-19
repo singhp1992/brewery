@@ -34,6 +34,7 @@ export default {
   display: grid;
   max-width: 100%;
   grid-template-columns: auto auto auto auto;
+  grid-template-rows: 20px;
 }
 
 /* make sure that the mobile screens dont cut out */
