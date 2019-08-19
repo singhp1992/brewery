@@ -48,6 +48,7 @@ a {
   padding-top: 50px;
   padding-bottom: 75px;
   color: black;
+  font-size: 20px;
 }
 
 a:hover {
