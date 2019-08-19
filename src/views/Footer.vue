@@ -1,9 +1,9 @@
 <template>
     <div id="footer">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/categories">Categories</router-link> | 
-      <router-link to="/random">Random</router-link> |
-      <router-link to="/api" target="_blank">API Documentation</router-link> | 
+      <router-link class="no-display" to="/home">Home</router-link>
+      <router-link class="no-display" to="/categories">Categories</router-link> 
+      <router-link class="no-display" to="/random">Random</router-link>
+      <router-link to="/api" target="_blank">API Documentation</router-link> 
       <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
 </template>
@@ -32,5 +32,25 @@ export default {
 
 #footer a {
   color: goldenrod;
+}
+
+@media screen and (max-width: 414px) and (min-width: 319px) {
+  #footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75px;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /* adding this class to links that repeat in the nav */
+  .no-display {
+    display: none;
+  }
+
+  #footer a {
+    padding: 5px;
+  }
 }
 </style>
