@@ -60,6 +60,7 @@ a:hover {
   height: 100px;
   padding-top: 50px;
   background-color: white;
+  border-radius: 25px;
 }
 
 .card:hover {

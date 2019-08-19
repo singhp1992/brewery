@@ -22,6 +22,10 @@ option {
   font-family: "Livvic", sans-serif;
 }
 
+label {
+  color: white;
+}
+
 .sort {
   font-size: 20px;
 }

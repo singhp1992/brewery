@@ -24,11 +24,11 @@ export default {
   top: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(243, 242, 239);
-  color: black;
+  background-color: black;
+  color: white;
   /* border-bottom: 2px solid black; */
   z-index: 10;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 
   /* grid css layout */
   display: grid;
@@ -41,16 +41,16 @@ export default {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 0 10px;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: rgb(219, 189, 113);
+  color: #f19f4d;
 }
 
 #nav a.router-link-exact-active {

@@ -105,6 +105,7 @@ button {
   width: 400px;
   height: 400px;
   background-color: white;
+  border-radius: 25px;
 }
 
 .card:hover {

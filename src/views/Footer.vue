@@ -21,12 +21,13 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:rgb(83, 175, 91);
+  background-color:black;
   color: white;
   text-align: center;
   padding: 10px 0;
   /* border-top: 2px solid black; */
-  box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.3);
+
 
   /* grid css layout */
   display: grid;

@@ -94,6 +94,7 @@ button {
   padding-top: 50px;
   margin-bottom: 100px;
   background-color: white;
+  border-radius: 25px;
 }
 
 .details-card:hover {

@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <h1> All Breweries </h1>
+    <h1>All Breweries</h1>
     <Sort :filterList="filterList" 
     :uniqueItemsList="uniqueItemsList" />
     <Brewerys :brewerys="brewerys"
@@ -58,7 +58,10 @@ export default {
 <style>
 #home {
   margin-top: 150px;
-  background-color: #d9d9d9
+}
+
+h1 {
+  color: white;
 }
 </style>
 
