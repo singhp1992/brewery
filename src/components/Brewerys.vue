@@ -5,7 +5,8 @@
             <li :key="brewery.id"
             class="card" 
             v-for="brewery in brewerys"
-            v-show="state === '' || state === brewery.state"  >
+            v-show="state === '' || state === brewery.state">
+                <!-- links to the detail page -->
                 <router-link v-bind:to="'/home/' + brewery.id"><a>{{ brewery.name }}</a></router-link>
             </li>
         </ul>
