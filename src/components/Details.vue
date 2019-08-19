@@ -18,12 +18,12 @@
 
 <script>
 import axios from "axios";
-import AllRecos from './AllRecos.vue';
+import AllRecos from "./AllRecos.vue";
 
 export default {
   name: "Details",
   components: {
-    AllRecos,
+    AllRecos
   },
   data() {
     return {
@@ -44,13 +44,22 @@ export default {
 
 <style>
 #details-page {
+  /* design css */
   margin-top: 130px;
-  display: inline-flex;
+  height: 1200px;
+
+  /* grid css */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  justify-content: center;
 }
 
-#deets {
+/* #deets {
   margin: 0 75px;
-}
+} */
 
 .transform {
   text-transform: capitalize;
@@ -84,7 +93,7 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 300px;
+  width: 400px;
   height: 400px;
   padding-top: 50px;
 }
