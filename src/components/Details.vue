@@ -51,7 +51,7 @@ export default {
   /* grid css */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   grid-row-gap: 50px;
   grid-column-gap: 50px;
   justify-content: center;
@@ -89,7 +89,7 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 400px;
+  width: 300px;
   height: 400px;
   padding-top: 50px;
   margin-bottom: 100px;
