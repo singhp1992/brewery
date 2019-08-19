@@ -17,4 +17,8 @@ export default {
 </script>
 
 <style>
+select,
+option {
+  font-family: "Livvic", sans-serif;
+}
 </style>
