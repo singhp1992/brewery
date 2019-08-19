@@ -107,16 +107,16 @@ export default {
   }
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .fade-header {
     margin-top: 150px;
   }
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
+@media screen and (max-width: 600px) and (min-width: 300px) {
   .fade-header {
     width: 90%;
     margin: 170px auto;
   }
-} */
+}
 </style>
