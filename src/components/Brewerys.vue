@@ -27,7 +27,7 @@ export default {
 .brewery-list {
   /* design css */
   list-style-type: none;
-  height: 1000px;
+  height: 2000px;
   margin: 0 120px;
   font-size: large;
 
@@ -36,6 +36,7 @@ export default {
   max-width: 100%;
   grid-template-columns: repeat(auto-fit, 300px);
   grid-column-gap: 50px;
+  grid-row-gap: 25px;
   justify-content: center;
 }
 
