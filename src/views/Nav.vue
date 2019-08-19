@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
-        <router-link to="/">Welcome</router-link>  
-        <router-link to="/home">All Breweries</router-link>  
-        <router-link to="/categories">Categories</router-link>  
-        <router-link to="/random">Random</router-link>  
+    <router-link to="/">Welcome</router-link>  
+    <router-link to="/home">Breweries</router-link>  
+    <router-link to="/categories">Categories</router-link>  
+    <router-link to="/random">Random</router-link>  
   </div>
 </template>
 
@@ -15,6 +15,7 @@ export default {
 
 <style>
 #nav {
+  /* design css */
   padding: 30px;
   position: fixed;
   text-align: center;
@@ -28,6 +29,13 @@ export default {
   border-bottom: 2px solid black;
   z-index: 10;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  grid-gap: 10px;
+  justify-content: center;
 }
 
 a {
@@ -41,24 +49,11 @@ a:visited {
   color: white;
 }
 
-#nav a.router-link-exact-active {
-  color: purple;
+a:hover {
+  color: goldenrod;
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
-  /* need to be more precise with nav bar */
-  /* WHY IS CATEGORIES DISAPPEARING ONLY ON MEDIAQUERY */
-
-  #nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100px;
-    width: 100%;
-  }
-
-  a {
-    padding: 10px;
-  }
+#nav a.router-link-exact-active {
+  color: purple;
 }
 </style>

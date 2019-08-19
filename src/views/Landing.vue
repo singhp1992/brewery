@@ -20,6 +20,9 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: auto;
 }
 
 .welcome-design {
@@ -110,7 +113,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
+@media screen and (max-width: 600px) and (min-width: 300px) {
   .fade-header {
     width: 90%;
     margin: 170px auto;

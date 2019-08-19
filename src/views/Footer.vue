@@ -3,7 +3,7 @@
       <router-link class="no-display" to="/home">Home</router-link>
       <router-link class="no-display" to="/categories">Categories</router-link> 
       <router-link class="no-display" to="/random">Random</router-link>
-      <router-link to="/api" target="_blank">API Documentation</router-link> 
+      <router-link to="/api" target="_blank">API</router-link> 
       <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
 </template>
@@ -16,6 +16,7 @@ export default {
 
 <style>
 #footer {
+  /* design css */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -23,34 +24,23 @@ export default {
   background-color: black;
   color: white;
   text-align: center;
-  z-index: 10;
-  height: 5%;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 2px solid black;
   box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  grid-gap: 10px;
+  justify-content: center;
 }
 
 #footer a {
   color: goldenrod;
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
-  #footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 75px;
-    width: 100%;
-    padding-top: 0;
-  }
-
-  /* adding this class to links that repeat in the nav */
-  .no-display {
-    display: none;
-  }
-
-  #footer a {
-    padding: 5px;
-  }
+#footer a:hover {
+  color: white;
 }
 </style>

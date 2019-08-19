@@ -21,7 +21,8 @@ export default {
 
 <style>
 #app {
-  font-family: "Roboto Mono", monospace, sans-serif;
+  /* font-family: "Roboto Mono", monospace, sans-serif; */
+  font-family: "Livvic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

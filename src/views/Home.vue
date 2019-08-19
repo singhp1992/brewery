@@ -57,13 +57,7 @@ export default {
 
 <style>
 #home {
-  margin-top: 120px;
-}
-
-@media (min-width: 320px) {
-  #home {
-    
-  }
+  margin-top: 130px;
 }
 </style>
 

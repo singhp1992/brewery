@@ -94,7 +94,7 @@ h2 {
 }
 
 #categories {
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 100px;
 }
 
@@ -122,11 +122,4 @@ h2 {
     height: fit-content;
   }
 }
-
-
-/* @media (max-width: 820px) {
-  .organized {
-    display: inline-block;
-  }
-} */
 </style>
