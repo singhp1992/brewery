@@ -1,8 +1,10 @@
 <template>
   <div id="home">
     <h1>All Breweries</h1>
+    <!-- Sort filters through breweries based off of the state -->
     <Sort :filterList="filterList" 
     :uniqueItemsList="uniqueItemsList" />
+    <!-- Brewerys component fetches data -->
     <Brewerys :brewerys="brewerys"
     :state="state" />
   </div>
