@@ -39,7 +39,7 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 10px;
   justify-content: center;
 }
