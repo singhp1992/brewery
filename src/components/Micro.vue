@@ -1,7 +1,7 @@
 <template>
   <div id="micro">
     <h3 class="title">Micro Brewery</h3>
-    <ul class="micro-list"> 
+    <ul class="list"> 
       <!-- Changed Micro to an li element -->
         <li class="card"
         v-bind:key="item.id" 
@@ -20,35 +20,5 @@ export default {
 </script>
 
 <style>
-#micro {
-  text-align: center;
-  margin: 50px 0 20px 0;
-}
-
-.micro-list {
-  /* design css */
-  list-style-type: none;
-  margin: 0 120px;
-  font-size: large;
-
-  /* grid css layout */
-  display: grid;
-  max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-column-gap: 50px;
-  justify-content: center;
-}
-
-/* card design  */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 300px;
-  height: 100px;
-  padding-top: 50px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+/* css in categories view */
 </style>

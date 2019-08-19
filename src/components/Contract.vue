@@ -1,10 +1,12 @@
 <template>
   <div id="contract">
-    <ul class="contract-list"> 
+    <h3 class="title">Contract Brewery</h3>
+    <ul class="list"> 
       <!-- Changed Contract to be an li element -->
-        <li class="title">Contract</li>
-        <li v-bind:key="item.id" v-for="item in contractList"> 
-            <router-link v-bind:to="'/home/' + item.id"><p class="item">{{ item.name }}</p></router-link>
+        <li class="card" 
+        v-bind:key="item.id" 
+        v-for="item in contractList"> 
+            <router-link v-bind:to="'/home/' + item.id"><a class="item">{{ item.name }}</a></router-link>
         </li>
     </ul>
   </div>
@@ -18,14 +20,5 @@ export default {
 </script>
 
 <style>
-.contract-list {
-  list-style-type: none;
-  padding-left: 0;
-  text-align: left;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: bold;
-}
+/* css in categories view */
 </style>

@@ -3,7 +3,7 @@
     <div class="organized">
       <Micro :microList="microList"/>
       <Brewpub :brewpubList="brewpubList"/>
-       <!-- <Contract :contractList="contractList"/> -->
+      <Contract :contractList="contractList"/>
     </div>
   </div>
 </template>
@@ -23,10 +23,12 @@ export default {
   },
   data() {
     return {
+      // empty array to push api data
       brewerys: []
     };
   },
   mounted() {
+    // fetching api data
     axios
       .get("https://api.openbrewerydb.org/breweries?page=1&per_page=10")
       .then(response => {
@@ -90,7 +92,30 @@ export default {
   margin-bottom: 100px;
 }
 
-#brewpub {
-  height: fit-content;
+/* css classed used in Micro,Brewpub,Contract component */
+.list {
+  /* design css */
+  list-style-type: none;
+  margin: 0 120px;
+  font-size: large;
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-column-gap: 50px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
