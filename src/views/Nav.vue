@@ -36,6 +36,8 @@ export default {
   grid-template-columns: auto auto auto auto;
 }
 
+/* make sure that the mobile screens dont cut out */
+
 a {
   font-weight: bold;
   text-decoration: none;
