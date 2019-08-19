@@ -58,13 +58,7 @@ export default {
 <style>
 #home {
   margin-top: 150px;
-  /* background-image: url("../assets/beer-color.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
+  background-color: #d9d9d9
 }
 </style>
 

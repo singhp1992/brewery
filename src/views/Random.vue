@@ -104,6 +104,7 @@ button {
   transition: 0.3s;
   width: 400px;
   height: 400px;
+  background-color: white;
 }
 
 .card:hover {

@@ -93,6 +93,7 @@ button {
   height: 400px;
   padding-top: 50px;
   margin-bottom: 100px;
+  background-color: white;
 }
 
 .details-card:hover {

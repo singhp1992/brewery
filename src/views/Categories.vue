@@ -106,6 +106,7 @@ export default {
   width: 300px;
   height: 100px;
   padding-top: 50px;
+  background-color: white;
 }
 
 .category-card:hover {

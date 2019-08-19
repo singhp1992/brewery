@@ -24,9 +24,9 @@ export default {
   top: 0;
   right: 0;
   width: 100%;
-  background-color: black;
-  color: white;
-  border-bottom: 2px solid black;
+  background-color: rgb(243, 242, 239);
+  color: black;
+  /* border-bottom: 2px solid black; */
   z-index: 10;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 
@@ -41,19 +41,19 @@ export default {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 0 10px;
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 a:hover {
-  color: goldenrod;
+  color: rgb(219, 189, 113);
 }
 
 #nav a.router-link-exact-active {
-  color: purple;
+  color:rgb(83, 175, 91);
 }
 </style>

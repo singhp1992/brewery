@@ -21,11 +21,11 @@ export default {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: black;
+  background-color:rgb(83, 175, 91);
   color: white;
   text-align: center;
   padding: 10px 0;
-  border-top: 2px solid black;
+  /* border-top: 2px solid black; */
   box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
 
   /* grid css layout */
@@ -37,10 +37,10 @@ export default {
 }
 
 #footer a {
-  color: goldenrod;
+  color: white;
 }
 
 #footer a:hover {
-  color: white;
+  color: rgb(219, 189, 113);
 }
 </style>
