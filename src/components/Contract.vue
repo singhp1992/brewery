@@ -1,6 +1,6 @@
 <template>
   <div id="contract">
-    <h3 class="title">Contract Brewery</h3>
+    <h1 class="title">Contract Brewery</h1>
     <ul class="category-list"> 
       <!-- Changed Contract to be an li element -->
         <li class="category-card" 

@@ -1,6 +1,6 @@
 <template>
   <div id="brewpub">
-    <h3 class="title">Brew Pub</h3>
+    <h1 class="title">Brew Pub</h1>
     <ul class="category-list"> 
       <!-- changed Brewpub to be an li element instead of h2 -->
         <li class="category-card"

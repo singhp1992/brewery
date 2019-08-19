@@ -119,7 +119,7 @@ export default {
 }
 
 .item {
-  color: black;
+  font-size: 20px;
 }
 
 .organized a {
@@ -133,11 +133,11 @@ export default {
 
 /* individually colored links */
 .category-list li:nth-child(1) a {
-  color: #F96714;
+  color: #f96714;
 }
 
 .category-list li:nth-child(2) a {
-  color: #C62168;
+  color: #c62168;
 }
 
 .category-list li:nth-child(3) a {
@@ -149,7 +149,7 @@ export default {
 }
 
 .category-list li:nth-child(5) a {
-  color: #006E6D;
+  color: #006e6d;
 }
 
 .category-list li:nth-child(6) a {

@@ -62,7 +62,7 @@ export default {
   /* grid css */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, 350px);
   justify-content: center;
 }
 
@@ -106,7 +106,7 @@ button {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 400px;
+  width: 350px;
   height: 400px;
   background-color: white;
   border-radius: 25px;
