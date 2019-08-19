@@ -1,8 +1,8 @@
 <template>
     <div id="footer">
-      <router-link class="no-display" to="/home">Home</router-link>
-      <router-link class="no-display" to="/categories">Categories</router-link> 
-      <router-link class="no-display" to="/random">Random</router-link>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/categories">Categories</router-link> 
+      <router-link to="/random">Random</router-link>
       <router-link to="/api" target="_blank">API</router-link> 
       <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
