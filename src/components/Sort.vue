@@ -21,4 +21,8 @@ select,
 option {
   font-family: "Livvic", sans-serif;
 }
+
+.sort {
+  font-size: 20px;
+}
 </style>
