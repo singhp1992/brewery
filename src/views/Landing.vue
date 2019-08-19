@@ -22,6 +22,11 @@ export default {
   right: 0;
 }
 
+.landing {
+  display: grid;
+  max-width: 100%;
+}
+
 .welcome-design {
   text-align: center;
   color: white;
@@ -104,7 +109,9 @@ export default {
   }
 }
 
-@media (max-width: 1024px) {
+
+
+/* @media (max-width: 1024px) {
   .fade-header {
     margin-top: 150px;
   }
@@ -115,5 +122,5 @@ export default {
     width: 90%;
     margin: 170px auto;
   }
-}
+} */
 </style>
