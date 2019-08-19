@@ -63,9 +63,51 @@ a:hover {
   padding-top: 50px;
   background-color: white;
   border-radius: 25px;
+  border: 2px solid #d9d9d9;
 }
 
 .card:hover {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px 0 rgba(255, 254, 254, 0.3);
+}
+
+/* individually colored links */
+.brewery-list li:nth-child(1) a {
+  color: #F96714;
+}
+
+.brewery-list li:nth-child(2) a {
+  color: #C62168;
+}
+
+.brewery-list li:nth-child(3) a {
+  color: #1ac373;
+}
+
+.brewery-list li:nth-child(4) a {
+  color: #8699f6;
+}
+
+.brewery-list li:nth-child(5) a {
+  color: #006E6D;
+}
+
+.brewery-list li:nth-child(6) a {
+  color: #ad4d10;
+}
+
+.brewery-list li:nth-child(7) a {
+  color: #c64363;
+}
+
+.brewery-list li:nth-child(8) a {
+  color: #89b64d;
+}
+
+.brewery-list li:nth-child(9) a {
+  color: #2f20c5;
+}
+
+.brewery-list li:nth-child(10) a {
+  color: #b57cc7;
 }
 </style>
