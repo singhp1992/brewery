@@ -10,9 +10,9 @@
 
 <script>
 import axios from "axios";
-import FirstReco from './FirstReco.vue'
-import SecondReco from './SecondReco.vue';
-import ThirdReco from './ThirdReco.vue'
+import FirstReco from "./FirstReco.vue";
+import SecondReco from "./SecondReco.vue";
+import ThirdReco from "./ThirdReco.vue";
 
 export default {
   components: {

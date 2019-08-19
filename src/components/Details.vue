@@ -46,7 +46,7 @@ export default {
 #details-page {
   /* design css */
   margin-top: 130px;
-  height: 1000px;
+  height: 100%;
 
   /* grid css */
   display: grid;
@@ -92,6 +92,8 @@ button {
   width: 400px;
   height: 400px;
   padding-top: 50px;
+  margin-bottom: 100px;
+
 }
 
 .card:hover {
