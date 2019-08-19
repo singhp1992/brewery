@@ -19,6 +19,7 @@ export default {
   },
   mounted() {
     axios
+      // Third recommendation
       // fetching recommended breweries based off of id number close to this.id
       .get("https://api.openbrewerydb.org/breweries/" + (this.id * 1 + 3))
       .then(response => {

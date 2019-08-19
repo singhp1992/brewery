@@ -12,6 +12,7 @@
 <script>
 export default {
   name: "Sort",
+  // props are passed from Home.vue   
   props: ["uniqueItemsList", "filterList"]
 };
 </script>
