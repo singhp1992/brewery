@@ -28,8 +28,3 @@ export default {
   color: black;
 }
 </style>
-
-
-// improve design
-// get rid of blank space - look into modern websites for inspo
-// add more comments throughout application
