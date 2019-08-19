@@ -67,7 +67,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 5px 10px 1px 0 #E48252;
+  box-shadow: 5px 10px 1px 0 #d9d9d9;
 }
 
 /* individually colored links */

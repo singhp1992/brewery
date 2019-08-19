@@ -115,7 +115,7 @@ export default {
 }
 
 .category-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 1px 0 #d9d9d9;
 }
 
 .item {
