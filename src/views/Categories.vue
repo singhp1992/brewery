@@ -1,6 +1,5 @@
 <template>
   <div id="categories">
-    <p>Types of Breweries</p>
     <div class="organized">
       <Micro :microList="microList"/>
       <!-- <Brewpub :brewpubList="brewpubList"/>
@@ -86,6 +85,7 @@ export default {
 }
 
 #categories {
+  height: 1000px;
   margin-top: 130px;
   margin-bottom: 100px;
 }

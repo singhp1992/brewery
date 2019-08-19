@@ -1,6 +1,6 @@
 <template>
   <div id="micro">
-    <h3 class="title">Micro</h3>
+    <h3 class="title">Micro Brewery</h3>
     <ul class="micro-list"> 
       <!-- Changed Micro to an li element -->
         <li class="card"
