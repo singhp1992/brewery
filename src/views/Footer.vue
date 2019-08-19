@@ -42,6 +42,6 @@ export default {
 }
 
 #footer a:hover {
-  color: rgb(219, 189, 113);
+  color: #cc0a8d;
 }
 </style>
