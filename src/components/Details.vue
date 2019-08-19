@@ -92,16 +92,4 @@ button {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
-/* @media (max-width: 1024px) {
-  #details-page {
-    display: inline-block;
-  }
-
-  #arizona,
-  #alabama,
-  #alaska {
-    margin: 100px 0;
-  }
-} */
 </style>
