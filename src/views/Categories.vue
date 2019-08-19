@@ -37,6 +37,7 @@ export default {
   },
   // Revision: changed all the foreach functions to map
   // each list function creates an array of brewerys based on their type
+  // This creates the categories page
   computed: {
     microList: function() {
       const micro = [];
@@ -88,7 +89,7 @@ export default {
   margin-bottom: 100px;
 }
 
-/* css used in Micro,Brewpub,Contract component */
+/* css used for Micro,Brewpub,Contract component */
 .category-list {
   /* design css */
   list-style-type: none;
