@@ -20,11 +20,11 @@ export default {
 <style scoped>
 .brewerys {
   text-align: center;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: 20px 0 100px 0;
 }
 
 .brewery-list {
+  /* design css */
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -34,6 +34,13 @@ export default {
   margin: 0 120px;
   justify-content: space-around;
   font-size: large;
+
+  /* grid css layout */
+  display: grid;
+  max-width: 100%;
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
 }
 
 h4 {
@@ -48,7 +55,7 @@ a:hover {
   color: darkgrey;
 }
 
-@media screen and (max-width: 414px) and (min-width: 319px) {
+/* @media screen and (max-width: 414px) and (min-width: 319px) {
   .brewery-list {
     display: inline;
   }
@@ -56,5 +63,5 @@ a:hover {
   li {
     margin-top: 20px;
   }
-}
+} */
 </style>
