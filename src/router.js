@@ -39,6 +39,7 @@ export default new Router({
     {
       path: '/api',
       beforeEnter() {
+        // directed towards api documentation
         location.href = 'https://www.openbrewerydb.org/#documentation'
       }
     },
