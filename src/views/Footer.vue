@@ -24,9 +24,7 @@ export default {
   background-color: black;
   color: white;
   text-align: center;
-  z-index: 10;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 2px solid black;
   box-shadow: 0 -5px 16px 0px rgba(0, 0, 0, 0.3);
 
