@@ -70,6 +70,10 @@ export default {
   text-transform: capitalize;
 }
 
+h1 {
+  padding: 0 10px;
+}
+
 .random-url {
   color: blue;
 }
@@ -80,7 +84,7 @@ export default {
 
 .random-button {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 button {
