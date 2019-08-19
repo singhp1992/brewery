@@ -11,7 +11,8 @@
                 <!-- on click will go back to previous page (either home or categories page) -->
                 <button @click="$router.go(-1)">Back</button>
             </div>
-        </div> 
+        </div>
+         <!--AllRecos will appear on their own card  -->
         <AllRecos />
     </div>
 </template>
