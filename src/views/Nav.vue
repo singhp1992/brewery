@@ -15,6 +15,7 @@ export default {
 
 <style>
 #nav {
+  /* design css */
   padding: 30px;
   position: fixed;
   text-align: center;
@@ -28,12 +29,11 @@ export default {
   border-bottom: 2px solid black;
   z-index: 10;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
-}
 
-#nav {
+  /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 20px;
   grid-column-gap: 20px;
 }
@@ -63,8 +63,8 @@ a:visited {
 } */
 
 /* @media screen and (max-width: 414px) and (min-width: 319px) { */
-  /* need to be more precise with nav bar */
-  /* WHY IS CATEGORIES DISAPPEARING ONLY ON MEDIAQUERY */
+/* need to be more precise with nav bar */
+/* WHY IS CATEGORIES DISAPPEARING ONLY ON MEDIAQUERY */
 
 /* //   #nav {
 //     display: flex;
