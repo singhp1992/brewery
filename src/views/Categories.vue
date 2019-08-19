@@ -70,14 +70,6 @@ export default {
 </script>
 
 <style>
-.item {
-  color: black;
-}
-
-.item:hover {
-  color: darkgray;
-}
-
 .organized {
   width: 100%;
 }
@@ -87,12 +79,12 @@ export default {
 }
 
 #categories {
-  height: 1000px;
+  height: 1100px;
   margin-top: 130px;
   margin-bottom: 100px;
 }
 
-/* css classed used in Micro,Brewpub,Contract component */
+/* css used in Micro,Brewpub,Contract component */
 .category-list {
   /* design css */
   list-style-type: none;
@@ -118,5 +110,13 @@ export default {
 
 .category-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  color: black;
+}
+
+.item:hover {
+  color: darkgray;
 }
 </style>
