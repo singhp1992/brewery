@@ -24,7 +24,6 @@ export default {
   /* design css */
   list-style-type: none;
   padding-left: 0;
-  /* text-align: left; */
 
     /* grid css */
   display: grid;
@@ -46,8 +45,6 @@ export default {
   transition: 0.3s;
   width: 300px;
   height: 200px;
-  /* padding-top: 50px; */
-  /* margin-bottom: 100px; */
 }
 
 .card:hover {
