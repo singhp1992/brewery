@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .brewerys {
   text-align: center;
-  margin: 20px 0 100px 0;
+  margin: 50px 0 100px 0;
 }
 
 .brewery-list {
