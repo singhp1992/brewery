@@ -52,28 +52,4 @@ a:visited {
 #nav a.router-link-exact-active {
   color: purple;
 }
-
-/* @media (min-width: 319px) {
-  #nav {
-    grid-template-columns: 1fr auto auto;
-    justify-items: start;
-  }
-} */
-
-/* @media screen and (max-width: 414px) and (min-width: 319px) { */
-/* need to be more precise with nav bar */
-/* WHY IS CATEGORIES DISAPPEARING ONLY ON MEDIAQUERY */
-
-/* //   #nav {
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     height: 100px;
-//     width: 100%;
-//   }
-
-//   a {
-//     padding: 10px;
-//   }
-// } */
 </style>
