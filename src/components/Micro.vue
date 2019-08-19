@@ -22,13 +22,12 @@ export default {
 <style>
 #micro {
   text-align: center;
-  margin: 50px 0 100px 0;
+  margin: 50px 0 20px 0;
 }
 
 .micro-list {
   /* design css */
   list-style-type: none;
-  /* height: 1000px; */
   margin: 0 120px;
   font-size: large;
 
