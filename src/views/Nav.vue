@@ -33,7 +33,7 @@ export default {
 #nav {
   display: grid;
   max-width: 100%;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: auto auto auto auto;
 }
 
 a {
