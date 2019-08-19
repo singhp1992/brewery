@@ -3,7 +3,7 @@
       <router-link class="no-display" to="/home">Home</router-link>
       <router-link class="no-display" to="/categories">Categories</router-link> 
       <router-link class="no-display" to="/random">Random</router-link>
-      <router-link to="/api" target="_blank">API Documentation</router-link> 
+      <router-link to="/api" target="_blank">API</router-link> 
       <router-link to="/github" target="_blank">Preeti Singh</router-link>
     </div>
 </template>
@@ -31,8 +31,9 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   grid-gap: 10px;
+  justify-content: center;
 }
 
 #footer a {

@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
-        <router-link to="/">Welcome</router-link>  
-        <router-link to="/home">Breweries</router-link>  
-        <router-link to="/categories">Categories</router-link>  
-        <router-link to="/random">Random</router-link>  
+    <router-link to="/">Welcome</router-link>  
+    <router-link to="/home">Breweries</router-link>  
+    <router-link to="/categories">Categories</router-link>  
+    <router-link to="/random">Random</router-link>  
   </div>
 </template>
 
@@ -33,9 +33,9 @@ export default {
   /* grid css layout */
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   grid-gap: 10px;
+  justify-content: center;
 }
 
 a {
