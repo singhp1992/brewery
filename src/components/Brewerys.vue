@@ -1,7 +1,8 @@
 <template>
     <div class="brewerys">
         <ul class="brewery-list">
-            <li :key="brewery.id" 
+            <li :key="brewery.id"
+            class="card" 
             v-for="brewery in brewerys"
             v-show="state === '' || state === brewery.state"  >
                 <router-link v-bind:to="'/home/' + brewery.id"><a>{{ brewery.name }}</a></router-link>
@@ -55,13 +56,10 @@ a:hover {
   color: darkgrey;
 }
 
-/* @media screen and (max-width: 414px) and (min-width: 319px) {
-  .brewery-list {
-    display: inline;
-  }
-
-  li {
-    margin-top: 20px;
-  }
-} */
+/* card design  */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
 </style>
