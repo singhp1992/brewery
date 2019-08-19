@@ -25,6 +25,7 @@ export default {
 .landing {
   display: grid;
   max-width: 100%;
+  grid-template-columns: auto;
 }
 
 .welcome-design {
