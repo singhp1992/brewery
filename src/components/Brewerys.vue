@@ -27,13 +27,13 @@ export default {
 .brewery-list {
   /* design css */
   list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* padding-left: 0;
+  display: flex; */
+  /* flex-direction: column;
+  flex-wrap: wrap; */
   height: 350px;
   margin: 0 120px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   font-size: large;
 
   /* grid css layout */
@@ -60,11 +60,13 @@ a:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 200px;
+  width: 300px;
   height: 100px;
+  padding-top: 50px;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 </style>
