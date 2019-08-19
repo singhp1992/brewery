@@ -1,7 +1,7 @@
 <template>
   <div id="brewpub">
     <h1 class="title">Brew Pub</h1>
-    <ul class="category-list"> 
+    <ul class="category-list brewpub"> 
       <!-- changed Brewpub to be an li element instead of h2 -->
         <li class="category-card"
         v-bind:key="item.id" 

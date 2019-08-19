@@ -127,10 +127,6 @@ export default {
   padding-bottom: 75px;
 }
 
-.item:hover {
-  color: darkgray;
-}
-
 /* individually colored links */
 .category-list li:nth-child(1) a {
   color: #f96714;
@@ -164,11 +160,11 @@ export default {
   color: #89b64d;
 }
 
-.category-list li:nth-child(9) a {
+.brewpub li:nth-child(1) a {
   color: #2f20c5;
 }
 
-.category-list li:nth-child(10) a {
+.contract li:nth-child(1) a {
   color: #b57cc7;
 }
 </style>

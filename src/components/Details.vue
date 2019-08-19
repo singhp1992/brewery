@@ -1,7 +1,7 @@
 <template>
     <div id="details-page">
         <div id="deets" class="details-card">
-            <h3 class="transform">{{ brewerys.name }}</h3>
+            <h3 class="transform colored-header">{{ brewerys.name }}</h3>
             <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
             <p class="transform">Address: {{ brewerys.street }} </p>
             <p> {{ brewerys.state }} </p>
@@ -55,6 +55,10 @@ export default {
   grid-row-gap: 50px;
   grid-column-gap: 50px;
   justify-content: center;
+}
+
+.colored-header {
+  color: #a85ff1;
 }
 
 .transform {

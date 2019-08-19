@@ -1,7 +1,7 @@
 <template>
   <div id="contract">
     <h1 class="title">Contract Brewery</h1>
-    <ul class="category-list"> 
+    <ul class="category-list contract"> 
       <!-- Changed Contract to be an li element -->
         <li class="category-card" 
         v-bind:key="item.id" 
