@@ -153,7 +153,7 @@ export default {
 }
 
 .category-list li:nth-child(7) a {
-  color: #c64363;
+  color: #ffbb00;
 }
 
 .category-list li:nth-child(8) a {

@@ -67,7 +67,7 @@ a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 10px 20px 0 rgba(255, 254, 254, 0.3);
+  box-shadow: 5px 10px 10px 0 rgba(255, 254, 254, 0.5);
 }
 
 /* individually colored links */
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .brewery-list li:nth-child(7) a {
-  color: #c64363;
+  color: #ffbb00;
 }
 
 .brewery-list li:nth-child(8) a {
