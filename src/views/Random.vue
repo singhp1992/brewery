@@ -70,6 +70,10 @@ export default {
   text-transform: capitalize;
 }
 
+.name {
+  padding-top: 25px;
+}
+
 .random-url {
   color: blue;
 }

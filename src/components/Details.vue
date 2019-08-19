@@ -1,6 +1,6 @@
 <template>
     <div id="details-page">
-        <div id="deets" class="card">
+        <div id="deets" class="details-card">
             <h3 class="transform">{{ brewerys.name }}</h3>
             <p class="transform">Type of Brewery: {{ brewerys.brewery_type }}</p>
             <p class="transform">Address: {{ brewerys.street }} </p>
@@ -86,7 +86,7 @@ button {
 }
 
 /* card design  */
-.card {
+.details-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 300px;
@@ -95,7 +95,7 @@ button {
   margin-bottom: 100px;
 }
 
-.card:hover {
+.details-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 </style>

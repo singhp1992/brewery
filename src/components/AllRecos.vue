@@ -1,5 +1,5 @@
 <template>
-    <div id="reco" class="card"> 
+    <div id="reco" class="details-card"> 
       <h3 class="transform">Recommended Breweries</h3>
         <!-- adding all the recommendations to this component so they will be in same div -->
         <FirstReco />
